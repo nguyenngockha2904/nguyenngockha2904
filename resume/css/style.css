@@ -18,11 +18,16 @@
   background: #555; }
 
 body {
-  font-size: 14px;
-  line-height: 1.42857143;
-  width: 100%;
+  font-size: 15px;
   background-image: url("../../img/backgroundLine.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #header .navBar .dropdown:hover > .dropdown-menu {
+    display: block; }
 
 /*# sourceMappingURL=style.css.map */

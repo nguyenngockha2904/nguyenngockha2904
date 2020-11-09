@@ -20,9 +20,46 @@
 </head>
 
 <body>
-    <div id="wapper">
-        <div id="header">
-
+    <div id="wapper" class="container">
+        <div id="header" class="container-sm">
+            <ul class="nav justify-content-end navBar">
+                <li class="nav-item">
+                    <a class="nav-link " href="#">home</a>
+                </li>
+            </ul>
+            <ul class="nav justify-content-end navBar">
+                <li class="nav-item">
+                    <a class="nav-link " href="#">home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">portfolio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pages
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Blogs
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Contact</a>
+                </li>
+            </ul>
 
         </div>
     </div>
@@ -77,8 +114,16 @@
                 spinner: 'wave',
             });
         });
-
+        $('body').on('mouseenter mouseleave', '.dropdown', function (e) {
+            var _d = $(e.target).closest('.dropdown');
+            if (e.type === 'mouseenter') _d.addClass('show');
+            setTimeout(function () {
+                _d.toggleClass('show', _d.is(':hover'));
+                $('[data-toggle="dropdown"]', _d).attr('aria-expanded', _d.is(':hover'));
+            }, 300);
+        });
     </script>
+
 </body>
 
 </html>
