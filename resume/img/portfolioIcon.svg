@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74.563" height="56.172" viewBox="0 0 74.563 56.172">
+  <g id="portfolioIcon" transform="translate(-0.5 -6.5)">
+    <path id="Path_258" data-name="Path 258" d="M1,62.172H74.563V7H1Zm3.065-3.065V47.481L20.923,30.623,36.249,45.948,62.3,19.895l9.2,9.2V59.107ZM71.5,10.065V24.756l-9.2-9.2L36.249,41.614,20.923,26.289,4.065,43.147V10.065Z" transform="translate(0 0)" stroke="#000" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_259" data-name="Path 259" d="M26.663,27.326A7.663,7.663,0,1,0,19,19.663,7.671,7.671,0,0,0,26.663,27.326Zm0-12.26a4.6,4.6,0,1,1-4.6,4.6A4.6,4.6,0,0,1,26.663,15.065Z" transform="translate(9.586 2.663)" stroke="#000" stroke-width="1"/>
+  </g>
+</svg>

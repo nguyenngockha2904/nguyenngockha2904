@@ -1,0 +1,30 @@
+#groupTool {
+  position: sticky;
+  top: 30px;
+  margin-right: 16px;
+  margin-top: 0.7rem;
+
+  .toolItem {
+    margin-bottom: 2rem;
+    a {
+      display: block;
+      .icon {
+        height: 30px;
+        width: 30px;
+        transition: all 0.5s;
+        &.avatarUser {
+          box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
+          height: 45px;
+          width: 45px;
+          border-radius: 50%;
+        }
+        &:hover {
+          fill: #8c34eb;
+          path {
+            stroke: #8c34eb;
+          }
+        }
+      }
+    }
+  }
+}

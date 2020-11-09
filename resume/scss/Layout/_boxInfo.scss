@@ -3,9 +3,8 @@
   display: inline-block;
   box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: sticky;
+  top: 30px;
   .divDownloadResume {
     background: #dff0ea;
     text-align: center;

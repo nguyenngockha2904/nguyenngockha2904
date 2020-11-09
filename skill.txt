@@ -1,0 +1,67 @@
+<div class="my-5 line"></div>
+                    <div id="skills">
+                        <div class="subTitle">Skills</div>
+                        <dl class="groupInfo">
+                            <dt class="labelText">HTML & CSS & Bootstrap</dt>
+                            <dd>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 76%;" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="groupInfo">
+                            <dt class="labelText">JavaScript</dt>
+                            <dd>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="groupInfo">
+                            <dt class="labelText">SASS</dt>
+                            <dd>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="groupInfo">
+                            <dt class="labelText">ReactJS</dt>
+                            <dd>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 86%;" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="groupInfo">
+                            <dt class="labelText">React Native</dt>
+                            <dd>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="groupInfo">
+                            <dt class="labelText">Angular 8</dt>
+                            <dd>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="groupInfo">
+                            <dt class="labelText">MINDSET & ANALYSIS</dt>
+                            <dd>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>

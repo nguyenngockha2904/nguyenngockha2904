@@ -1,5 +1,7 @@
 #componentInfoCard {
-  #avatar {
+  width: 282px;
+  #avatar,
+  .avatar {
     height: 195px;
     width: 195px;
     background-size: cover;
@@ -58,11 +60,13 @@
   border-color: #e1e1e1;
   background-color: #fff;
   z-index: 3;
+  margin-bottom: 15px;
   padding: 45px 20px;
   border-radius: 3px;
   box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
   text-align: left;
   .titlePaper {
+    text-transform: uppercase;
     font-size: $fs-h1;
     font-weight: 700;
     margin-top: 0;
@@ -82,12 +86,30 @@
     margin-bottom: 1.571em;
     color: #757575;
   }
+  .labelText {
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  dd {
+    width: 100%;
+    .progress {
+      height: 5px;
+      .progress-bar {
+        background-color: #8c34eb;
+      }
+    }
+  }
 }
 .line {
   background-color: #e1e1e1;
   width: 85%;
   margin: auto;
   height: 1px;
+}
+.group_content_body {
+  margin: 0 30px;
+  margin-right: 40px;
 }
 .container-sm {
   @include respond-to("extra-large") {
@@ -97,8 +119,5 @@
   @include respond-to("large") {
     ///920
     margin-left: 310px;
-    &.group_content_body {
-      margin-right: 72px;
-    }
   }
 }
