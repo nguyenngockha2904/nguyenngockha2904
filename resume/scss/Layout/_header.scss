@@ -3,8 +3,33 @@
   justify-content: space-between;
   align-items: center;
   .navBar {
+    align-items: center;
+    #tieuDe {
+      font-family: $ff-Logo;
+      font-size: $fs-h2;
+      color: #fff;
+      letter-spacing: 3px;
+    }
     .nav-item {
       .nav-link {
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        .colapseButton {
+          background: #fff;
+          outline: none;
+          border-radius: 50%;
+          border: none;
+          &:hover,
+          &:focus-visible {
+            box-shadow: 0 0 6px 4px #9468fe;
+          }
+          img {
+            width: 20px;
+            height: auto;
+          }
+        }
       }
     }
 

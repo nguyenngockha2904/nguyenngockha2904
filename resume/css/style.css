@@ -18,16 +18,68 @@
   background: #555; }
 
 body {
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 1.4em;
+  letter-spacing: 0.08em;
   background-image: url("../../img/backgroundLine.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
+
+.wrapper {
+  display: flex;
+  justify-content: center; }
+
+@media (max-width: 991.98px) {
+  body {
+    background: #9468fe; } }
+@media screen and (min-width: 1200px) {
+  .container-sm {
+    margin-left: 330px; } }
+@media screen and (min-width: 992px) {
+  .container-sm {
+    margin-left: 310px; } }
 
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  #header .navBar .dropdown:hover > .dropdown-menu {
-    display: block; }
+  #header .navBar {
+    align-items: center; }
+    #header .navBar #tieuDe {
+      font-family: "Lobster", cursive;
+      font-size: 24px;
+      color: #fff;
+      letter-spacing: 3px; }
+    #header .navBar .nav-item .nav-link {
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: capitalize; }
+      #header .navBar .nav-item .nav-link .colapseButton {
+        background: #fff;
+        outline: none;
+        border-radius: 50%;
+        border: none; }
+        #header .navBar .nav-item .nav-link .colapseButton:hover, #header .navBar .nav-item .nav-link .colapseButton:focus-visible {
+          box-shadow: 0 0 6px 4px #9468fe; }
+        #header .navBar .nav-item .nav-link .colapseButton img {
+          width: 20px;
+          height: auto; }
+    #header .navBar .dropdown:hover > .dropdown-menu {
+      display: block; }
+
+#boxInfo {
+  background: #fff;
+  display: inline-block;
+  box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px; }
+
+#componentInfoCard #avatar {
+  height: 195px;
+  width: 195px;
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  margin: auto; }
 
 /*# sourceMappingURL=style.css.map */

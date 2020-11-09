@@ -1,13 +1,21 @@
-
 // colors
-$color-white-0:#FFFFFF;
-$color-black-0:#000;
-$color-red-0:#fb4226;
+$color-white-0: #ffffff;
+$color-black-0: #010101;
+$color-grey-0: #757575;
 
-
+// fontsize
+$fs-h1: 30px;
+$fs-h2: 24px;
+$fs-h3: 20px;
+$fs-h4: 18px;
+$fs-h5: 14px;
+$fs-h6: 12px;
+// font family
+$ff-text: "Quicksand", sans-serif;
+$ff-Logo: "Lobster", cursive;
 // breakpoints
 $breakpoints: (
-  "max-sreen": 1500px,
+  "max-sreen": 1375px,
   "extra-large": 1200px,
   "large": 992px,
   "medium": 769px,

@@ -15,16 +15,21 @@
     <link rel="stylesheet" href="./plugins/slick/slick-theme.css">
     <!-- Venobox -->
     <link rel="stylesheet" href="./plugins/venobox/venobox.min.css" type="text/css" media="screen">
-    <!-- CSS -->
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div id="wapper" class="container">
-        <div id="header" class="container-sm">
+    <div class="container">
+        <header id="header" class="container-sm">
             <ul class="nav justify-content-end navBar">
                 <li class="nav-item">
-                    <a class="nav-link " href="#">home</a>
+                    <a class="nav-link " href="#">
+                        <div id="tieuDe">Kha</div>
+                    </a>
                 </li>
             </ul>
             <ul class="nav justify-content-end navBar">
@@ -57,10 +62,42 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Contact</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">
+                        <button class="btn btn-primary colapseButton">
+                            <img src="./img/conslapeIcon.jpg" alt="conslapeIcon">
+                        </button>
+                    </a>
+
                 </li>
             </ul>
-
+        </header>
+        <div id="wrapper">
+            <div id="boxInfo">
+                <div id="componentInfoCard">
+                    <div class="w-100 text-center my-5 px-3">
+                        <div id="avatar"></div>
+                    </div>
+                    <div class="hoTen"></div>
+                    <div class="ChucDanh"></div>
+                    <ul class="nav listSocial">
+                        <li class="nav-item"><a class="nav-link " href="#"><span class="fab fa-facebook-f"></span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link " href="#"><span class="fab fa-twitter"></span></a></li>
+                        <li class="nav-item"><a class="nav-link " href="#"><span
+                                    class="fab fa-google-plus-g"></span></a></li>
+                        <li class="nav-item"><a class="nav-link " href="#"><span class="fab fa-instagram"></span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link " href="#"><span class="fab fa-pinterest"></span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="divDownloadResume">
+                    <button class="btn btn-primary btn--downloadResume">Download Resume</button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -123,7 +160,7 @@
             }, 300);
         });
     </script>
-
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

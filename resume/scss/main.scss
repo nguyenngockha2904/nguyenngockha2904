@@ -1,10 +1,22 @@
 // variable
 @import "./Hepler/variable";
-// reset
-@import "./Base/reset";
 // hepler
 @import "./Hepler/mixin";
-// layout
-@import "./Layout/header";
+// reset
+@import "./Base/reset";
 
+// layout
+.container-sm {
+  @include respond-to("extra-large") {
+    ///1200
+    margin-left: 330px;
+  }
+  @include respond-to("large") {
+    ///920
+    margin-left: 310px;
+  }
+}
+@import "./Layout/header";
+@import "./Layout/boxInfo";
 // component
+@import "./Component/component";
