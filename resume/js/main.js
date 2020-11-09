@@ -15,4 +15,11 @@ const fillData = (tieuDeText, hoTenText, avatarImgLink, ChucDanhText) => {
         cd.innerHTML = ChucDanhText;
     }
 }
-fillData('Kha', 'Kha', '../img/avatar.jpg', 'Front-end Developer');
+
+
+//  fillData(//Tên title , // Họ tên , //link Img avatar , // Chuc Danh  );
+fillData(
+    `<img src="./img/LogoCyberSoft.svg" alt="LogoCyberSoft.svg"><div>Kha</div>`,
+    'Nguyễn Ngọc Kha',
+    '../img/avatar.jpg',
+    'Front-end Developer');

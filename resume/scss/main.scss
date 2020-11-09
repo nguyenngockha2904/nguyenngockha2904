@@ -6,17 +6,10 @@
 @import "./Base/reset";
 
 // layout
-.container-sm {
-  @include respond-to("extra-large") {
-    ///1200
-    margin-left: 330px;
-  }
-  @include respond-to("large") {
-    ///920
-    margin-left: 310px;
-  }
-}
+
 @import "./Layout/header";
 @import "./Layout/boxInfo";
+@import "./Layout/thongTinCaNhan";
 // component
 @import "./Component/component";
+@import "./Component//button";

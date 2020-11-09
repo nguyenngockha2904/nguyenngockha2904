@@ -1,10 +1,13 @@
 .btn--downloadResume {
-  // @include button(
-  //   $color-gray-4,
-  //   $color-white-0,
-  //   $fs-0,
-  //   $fw-bold-0,
-  //   $color-black-light,
-  //   $color-gray-1
-  // );
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-color: #4a0c62;
+  box-shadow: 0 0 6px 1px #4a0c62;
+  &:hover {
+    background: #4a0c62;
+    border-color: #4a0c62;
+  }
 }

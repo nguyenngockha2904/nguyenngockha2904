@@ -11,26 +11,3 @@
     @warn "$breakpoint không tồn tại trong $breakpoints";
   }
 }
-@mixin button(
-  $color,
-  $bg-color,
-  $fs,
-  $fw,
-  $border-color,
-  $bg-color-hover,
-  $box-shadow-hover
-) {
-  color: $color;
-  background-color: $bg-color;
-  font-weight: $fw;
-  font-size: $fs;
-  white-space: nowrap;
-  border: 1px solid $border-color;
-  border-radius: 50%;
-  outline: none;
-  &:hover,
-  &:focus-visible {
-    box-shadow: $box-shadow-hover;
-    background-color: $bg-color-hover;
-  }
-}
