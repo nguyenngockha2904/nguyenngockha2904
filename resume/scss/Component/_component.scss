@@ -110,6 +110,7 @@
 .group_content_body {
   margin: 0 30px;
   margin-right: 40px;
+  min-height: 3000px;
 }
 .container-sm {
   @include respond-to("extra-large") {

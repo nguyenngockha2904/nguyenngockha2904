@@ -1,0 +1,46 @@
+#duAn_portfolio {
+  .navTab {
+    .nav-item {
+      .nav-link {
+        color: $color-grey-0;
+        font-size: $fs-default;
+        font-weight: 600;
+        line-height: 27px;
+      }
+      &:hover {
+        .nav-link {
+          color: $color-black-0;
+        }
+      }
+    }
+    &.nav-pills .nav-link.active,
+    &.nav-pills .show > .nav-link {
+      background: transparent;
+      color: $color-black-0;
+      font-weight: 700;
+    }
+  }
+
+  .tab-content {
+    .animationScale {
+      animation: scale-up-center 0.5s;
+      --primary-color: #4ca2cd;
+      --secondary-color: #65af6f;
+    }
+    .gridTab {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5px;
+      .rowSpan {
+        grid-row: 1 / span 2;
+        grid-column: 2;
+      }
+      &.gridTab1 {
+      }
+      &.gridTab2 {
+      }
+      &.gridTab3 {
+      }
+    }
+  }
+}
