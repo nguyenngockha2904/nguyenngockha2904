@@ -52,6 +52,13 @@ body {
 @media (max-width: 991.98px) {
   body {
     background: #9468fe; } }
+button:focus,
+button:active,
+button:hover .btn:active,
+.btn.active {
+  outline: 0px !important;
+  box-shadow: none !important; }
+
 header .sidenav {
   height: 100%;
   width: 100%;
@@ -271,28 +278,26 @@ header #header {
       border-left: 10px solid transparent;
       border-color: #8c34eb; } }
 
-#duAn_portfolio .navTab .nav-item .nav-link {
-  color: #757575;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 27px; }
-#duAn_portfolio .navTab .nav-item:hover .nav-link {
-  color: #010101; }
-#duAn_portfolio .navTab.nav-pills .nav-link.active, #duAn_portfolio .navTab.nav-pills .show > .nav-link {
-  background: transparent;
-  color: #010101;
-  font-weight: 700; }
-#duAn_portfolio .tab-content .animationScale {
-  animation: scale-up-center 0.5s;
+#duAn_portfolio .btn-group {
+  margin-bottom: 2rem; }
+  #duAn_portfolio .btn-group button {
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--roboto);
+    color: #757575;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+    text-transform: capitalize;
+    cursor: pointer; }
+    #duAn_portfolio .btn-group button + button {
+      padding: 0 1.5rem; }
+    #duAn_portfolio .btn-group button:hover, #duAn_portfolio .btn-group button.active {
+      color: #010101;
+      font-weight: 700; }
+#duAn_portfolio .grid .element-item {
   --primary-color: #4ca2cd;
   --secondary-color: #65af6f; }
-#duAn_portfolio .tab-content .gridTab {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5px; }
-  #duAn_portfolio .tab-content .gridTab .rowSpan {
-    grid-row: 1 / span 2;
-    grid-column: 2; }
 
 #componentInfoCard {
   width: 282px; }
