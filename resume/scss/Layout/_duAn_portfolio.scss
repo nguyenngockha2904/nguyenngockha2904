@@ -23,8 +23,52 @@
   }
   .grid {
     .element-item {
-      --primary-color: #4ca2cd;
-      --secondary-color: #65af6f;
+      padding: 0 5px;
+      .item {
+        --primary-color: #4a0c62;
+        --secondary-color: #8c34eb;
+      }
+
+      .our-project {
+        figure {
+          figcaption {
+            .project_caption {
+              color: $color-white-0;
+              font-size: $fs-h5;
+              line-height: 27px;
+              text-transform: capitalize;
+              text-align: center;
+              .project_name {
+                font-weight: 700;
+              }
+              .project_desc {
+                color: #ffffff;
+                font-size: $fs-h6;
+                line-height: 20px;
+                text-align: justify;
+                letter-spacing: 0.5px;
+              }
+              .btnViewMore {
+                background: transparent;
+                border: 1px solid #fff;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 600;
+                margin-top: 5px;
+                line-height: 13px;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+                &:hover {
+                  background: $color-primary-1;
+                  border: 1px solid $color-primary-1;
+                  box-shadow: 0 0 10px $color-primary-1,
+                    0 0 40px $color-primary-1, 0 0 80px $color-primary-1;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -296,8 +296,38 @@ header #header {
       color: #010101;
       font-weight: 700; }
 #duAn_portfolio .grid .element-item {
-  --primary-color: #4ca2cd;
-  --secondary-color: #65af6f; }
+  padding: 0 5px; }
+  #duAn_portfolio .grid .element-item .item {
+    --primary-color: #4a0c62;
+    --secondary-color: #8c34eb; }
+  #duAn_portfolio .grid .element-item .our-project figure figcaption .project_caption {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 27px;
+    text-transform: capitalize;
+    text-align: center; }
+    #duAn_portfolio .grid .element-item .our-project figure figcaption .project_caption .project_name {
+      font-weight: 700; }
+    #duAn_portfolio .grid .element-item .our-project figure figcaption .project_caption .project_desc {
+      color: #ffffff;
+      font-size: 12px;
+      line-height: 20px;
+      text-align: justify;
+      letter-spacing: 0.5px; }
+    #duAn_portfolio .grid .element-item .our-project figure figcaption .project_caption .btnViewMore {
+      background: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 5px;
+      line-height: 13px;
+      text-transform: capitalize;
+      letter-spacing: 1px; }
+      #duAn_portfolio .grid .element-item .our-project figure figcaption .project_caption .btnViewMore:hover {
+        background: #8c34eb;
+        border: 1px solid #8c34eb;
+        box-shadow: 0 0 10px #8c34eb, 0 0 40px #8c34eb, 0 0 80px #8c34eb; }
 
 #componentInfoCard {
   width: 282px; }
