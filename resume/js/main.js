@@ -30,7 +30,6 @@ $(document).ready(function () {
     $btns.click(function (e) {
         $('#duAn_portfolio .btn-group button').removeClass('active');
         e.target.classList.add("active");
-        let k = $('#duAn_portfolio .element-item').removeClass('rowSpan');
         let selector = $(e.target).attr('data-filter');
         $('#duAn_portfolio .grid').isotope({
             filter: selector,
@@ -43,5 +42,4 @@ $(document).ready(function () {
 
 $('#duAn_portfolio .grid').isotope({
     percentPosition: true,
-    itemSelector: '.element-item',
 });
