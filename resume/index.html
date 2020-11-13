@@ -130,9 +130,10 @@
 
             </div>
         </div>
-        <!-- #endregion -->
 
     </div>
+
+    <!-- #endregion -->
     <div class="container">
         <header>
             <div id="mySidenav" class="modal fade modal-right" tabindex="-1" role="dialog">
@@ -615,30 +616,47 @@
     <!-- Owl Carousel -->
     <script>
         $(document).ready(function () {
-
-            $(".venobox").venobox({
-                autoplay: true,
-                overlayColor: 'rgba(29, 28, 28, 0.685)',
-                spinner: 'wave',
+            $('body').on('mouseenter mouseleave', '.dropdown', function (e) {
+                var _d = $(e.target).closest('.dropdown');
+                if (e.type === 'mouseenter') _d.addClass('show');
+                setTimeout(function () {
+                    _d.toggleClass('show', _d.is(':hover'));
+                    $('[data-toggle="dropdown"]', _d).attr('aria-expanded', _d.is(':hover'));
+                }, 300);
             });
-        });
-        $('body').on('mouseenter mouseleave', '.dropdown', function (e) {
-            var _d = $(e.target).closest('.dropdown');
-            if (e.type === 'mouseenter') _d.addClass('show');
-            setTimeout(function () {
-                _d.toggleClass('show', _d.is(':hover'));
-                $('[data-toggle="dropdown"]', _d).attr('aria-expanded', _d.is(':hover'));
-            }, 300);
-        });
-        // $(".toolItem").popover({ trigger: "hover" });
-        $(function () {
-            $('[data-toggle="popover"]').popover()
-        })
-        $(function () {
-            $('.example-popover').popover({
-                container: 'body'
+            // $(".toolItem").popover({ trigger: "hover" });
+            $(function () {
+                $('[data-toggle="popover"]').popover()
             })
-        })
+            $(function () {
+                $('.example-popover').popover({
+                    container: 'body'
+                })
+            })
+            $(".slick__carousel").slick({
+                dots: true,
+                arrows: false,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+            });
+            $(".slick__project").slick({
+                dots: true,
+                infinite: false,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                arrow: false,
+                dots: false,
+                useCSS: true,
+            });
+            // $(".venobox").venobox({
+            //     autoplay: true,
+            //     overlayColor: 'rgba(29, 28, 28, 0.685)',
+            //     spinner: 'wave',
+            // });
+        });
+
     </script>
     <!-- <script src="./js/wow.min.js"></script>
     <script>
@@ -676,24 +694,7 @@
             });
         })
 
-        $(".slick__carousel").slick({
-            dots: true,
-            arrows: false,
-            speed: 300,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            adaptiveHeight: true,
-        });
-        $(".slick__project").slick({
-            dots: true,
-            infinite: false,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            arrow: false,
-            dots: false,
-            useCSS: true,
-        });
+
 
     </script>
     <!-- Custom js  -->
