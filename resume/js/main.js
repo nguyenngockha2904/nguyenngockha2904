@@ -40,3 +40,8 @@ $(document).ready(function () {
         return false;
     });
 })
+
+$('#duAn_portfolio .grid').isotope({
+    percentPosition: true,
+    itemSelector: '.element-item',
+});
