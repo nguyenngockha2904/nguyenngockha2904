@@ -41,7 +41,7 @@ $(document).ready(function () {
     });
 })
 
-$('#duAn_portfolio .grid').isotope({
-    percentPosition: true,
-    filter: '*',
-});
+// $('#duAn_portfolio .grid').isotope({
+//     percentPosition: true,
+//     filter: '*',
+// });
