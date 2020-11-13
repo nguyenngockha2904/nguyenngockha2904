@@ -24,6 +24,10 @@ fillData(
     '../img/avatar.jpg',
     'Front-end Developer');
 
+const handleScrollto = (content) => {
+    let elmnt = document.getElementById(content);
+    elmnt.scrollIntoView();
+}
 
 
 

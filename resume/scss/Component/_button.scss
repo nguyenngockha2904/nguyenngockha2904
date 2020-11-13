@@ -7,7 +7,9 @@
   border-color: #4a0c62;
   box-shadow: 0 0 6px 1px #4a0c62;
   &:hover {
-    background: #4a0c62;
-    border-color: #4a0c62;
+    background: $color-primary-1;
+    border: 1px solid $color-primary-1;
+    box-shadow: 0 0 10px $color-primary-1, 0 0 30px $color-primary-1,
+      0 0 50px $color-primary-1;
   }
 }

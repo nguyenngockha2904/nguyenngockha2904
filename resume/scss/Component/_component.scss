@@ -36,6 +36,7 @@
   }
   .listSocial {
     padding: 10px;
+    justify-content: center;
     .nav-item {
       border-radius: 50px;
       .nav-link {
@@ -55,7 +56,20 @@
     }
   }
 }
-
+.title {
+  text-transform: uppercase;
+  font-size: $fs-h1;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.textMult {
+  color: $color-grey-0;
+  font-size: $fs-default;
+  font-weight: 600;
+  line-height: 27px;
+  text-transform: capitalize;
+}
 .paper {
   border-color: #e1e1e1;
   background-color: #fff;
@@ -120,5 +134,48 @@
   @include respond-to("large") {
     ///920
     margin-left: 310px;
+  }
+}
+#ModalViewMore {
+  &.modal.show .modal-dialog {
+    max-width: none;
+  }
+  .modal-content {
+    width: 95%;
+    margin: auto;
+    padding: 2rem 3rem;
+    .title {
+      margin-bottom: 5px;
+    }
+    .dl-horizontal {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      font-size: 13px;
+      text-align: justify;
+      dt {
+        font-weight: 700;
+        float: left;
+        width: 100px;
+        overflow: hidden;
+        clear: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      dd {
+        width: 100%;
+        margin-left: 10%;
+      }
+    }
+    .imgCarousel {
+      .imgCarousel_content {
+        img {
+          width: 100vh;
+          height: 100%;
+          max-width: 98%;
+          margin: auto;
+        }
+      }
+    }
   }
 }

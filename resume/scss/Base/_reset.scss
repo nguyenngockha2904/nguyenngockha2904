@@ -69,4 +69,22 @@ button:hover .btn:active,
 .btn.active {
   outline: 0px !important;
   box-shadow: none !important;
+  transition: all 600ms ease;
+  transition: all var(--transition-duration) ease;
+}
+.slick-initialized .slick-slide {
+  outline: 0px !important;
+}
+.slick-slide img {
+  width: 100%;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+.slick-slide img {
+  display: block;
+  height: 50%;
+  width: 98%;
+  margin: auto;
 }

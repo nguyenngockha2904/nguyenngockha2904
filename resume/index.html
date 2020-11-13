@@ -11,8 +11,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- Slick CSS -->
-    <link rel="stylesheet" href="./plugins/slick/slick.css">
-    <link rel="stylesheet" href="./plugins/slick/slick-theme.css">
+    <link rel="stylesheet" href="./plugins/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./plugins/slick-1.8.1/slick/slick-theme.css">
     <!-- Venobox -->
     <link rel="stylesheet" href="./plugins/venobox/venobox.min.css" type="text/css" media="screen">
     <!-- font family -->
@@ -24,38 +24,150 @@
     <link rel="stylesheet" href="./css/aos.css">
     <!-- izmir -->
     <link rel="stylesheet" href="./css/izmir.min.css">
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body id="body">
-    <div class="container">
-        <header>
-            <div id="mySidenav" class=" sidenav">
-                <div class="bgSidenav" onclick="closeNav()"></div>
-                <div id="componentInfoCard">
-                    <div class="w-100 text-center mt-5 mb-4 px-3">
-                        <div><img src="./img/avatar.jpg" alt="avatar" class="avatar"></div>
-                    </div>
-                    <div class="hoTen"></div>
-                    <div class="ChucDanh"></div>
-                    <ul class="nav listSocial">
-                        <li class="nav-item">
-                            <div id="fackbooklink" class="nav-link "><span class="fab fa-facebook-f"></span></div>
-                        </li>
-                        <li class="nav-item">
-                            <div id="linkGithub" class="nav-link " href="#"><span class="fab fa-github"></span>
+    <!--------------------- modalViewMore--------------------->
+    <!-- #region ModalViewMore -->
+    <div class="modal" id="ModalViewMore">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="row">
+                    <div id="project" class="col-md-7 col-12">
+                        <div class="slick__carousel imgCarousel">
+                            <div class="imgCarousel_content">
+                                <img src="./img/prj-01.jpg" alt="prj-01.jpg" />
+
                             </div>
-                        </li>
-                        <li class="nav-item"><a class="nav-link " href="#"><span
-                                    class="fab fa-google-plus-g"></span></a></li>
-                        <li class="nav-item"><a class="nav-link " href="#"><span class="fab fa-instagram"></span></a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link " href="#"><span class="fab fa-pinterest"></span></a>
-                        </li>
-                    </ul>
+                            <div class="imgCarousel_content">
+                                <img src="./img/prj-01.jpg" alt="prj-01.jpg" />
+
+                            </div>
+                            <div class="imgCarousel_content">
+                                <img src="./img/prj-01.jpg" alt="prj-01.jpg" />
+
+                            </div>
+                            <div class="imgCarousel_content">
+                                <img src="./img/prj-01.jpg" alt="prj-01.jpg" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-12">
+                        <div id="projectName" class="h5 title">
+                            RS Project
+                        </div>
+                        <div id="skill" class="textMult">
+                            design / development
+                        </div>
+                        <div id="desc_time">
+                            <dl>
+                                <div class="dl-horizontal">
+                                    <dt>Date:</dt>
+                                    <dd>11 Jan 2012</dd>
+                                </div>
+                                <div class="dl-horizontal">
+                                    <dt>Site link:</dt>
+                                    <dd><a href="www.sitedomen.com">www.sitedomen.com</a></dd>
+                                </div>
+
+                                <div class="dl-horizontal">
+                                    <dt>Client:</dt>
+                                    <dd>11 Jan 2012</dd>
+                                </div>
+
+                            </dl>
+                        </div>
+                        <div id="desc_content">
+                            <p>About 64% of all on-line teens say that do things online that they wouldn’t want
+                                their
+                                parents to know about. 11% of all adult internet users visit dating websites and
+                                spend their
+                                time in chatrooms.</p>
+                        </div>
+                        <div id="img_project_ref">
+                            <div class="slick__project">
+                                <div class="imgCarousel_content">
+                                    <img src="./img/prj-01.jpg" alt="prj-01.jpg" />
+
+                                </div>
+                                <div class="imgCarousel_content">
+                                    <img src="./img/prj-01.jpg" alt="prj-01.jpg" />
+
+                                </div>
+                                <div class="imgCarousel_content">
+                                    <img src="./img/prj-01.jpg" alt="prj-01.jpg" />
+
+                                </div>
+                                <div class="imgCarousel_content">
+                                    <img src="./img/prj-01.jpg" alt="prj-01.jpg" />
+
+                                </div>
+                                <div class="imgCarousel_content">
+                                    <img src="./img/prj-01.jpg" alt="prj-01.jpg" />
+
+                                </div>
+                                <div class="imgCarousel_content">
+                                    <img src="./img/prj-01.jpg" alt="prj-01.jpg" />
+
+                                </div>
+                                <div class="imgCarousel_content">
+                                    <img src="./img/prj-01.jpg" alt="prj-01.jpg" />
+
+                                </div>
+                                <div class="imgCarousel_content">
+                                    <img src="./img/prj-01.jpg" alt="prj-01.jpg" />
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+            </div>
+        </div>
+        <!-- #endregion -->
+
+    </div>
+    <div class="container">
+        <header>
+            <div id="mySidenav" class="modal fade modal-right" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <button type="button" class="btnClose" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div id="componentInfoCard">
+                            <div class="w-100 text-center mt-5 mb-4 px-3">
+                                <div><img src="./img/avatar.jpg" alt="avatar" class="avatar"></div>
+                            </div>
+                            <div class="hoTen"></div>
+                            <div class="ChucDanh"></div>
+                            <ul class="nav listSocial">
+                                <li class="nav-item">
+                                    <div id="fackbooklink" class="nav-link "><span class="fab fa-facebook-f"></span>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div id="linkGithub" class="nav-link " href="#"><span class="fab fa-github"></span>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a class="nav-link " href="#"><span
+                                            class="fab fa-google-plus-g"></span></a></li>
+                                <li class="nav-item"><a class="nav-link " href="#"><span
+                                            class="fab fa-instagram"></span></a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link " href="#"><span
+                                            class="fab fa-pinterest"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
             <nav id="header" class="container-sm">
                 <ul class="nav justify-content-end navBar">
@@ -100,7 +212,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="#">
-                            <button class="btn btn-primary colapseButton" onclick="openNav()">
+                            <button class="btn btn-primary colapseButton" data-toggle="modal" data-target="#mySidenav">
                                 <img src="./img/conslapeIcon.jpg" alt="conslapeIcon">
                             </button>
                         </a>
@@ -265,9 +377,10 @@
                 <section id="duAn_portfolio" class="paper" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
                     <div class="titlePaper">PORTFOLIO</div>
                     <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-secondary active">All</button>
-                        <button type="button" class="btn btn-secondary" data-filter=".photography">Photography</button>
-                        <button type="button" class="btn btn-secondary" data-filter=".design">Design</button>
+                        <button type="button" class="btn btn-secondary textMult active">All</button>
+                        <button type="button" class="btn btn-secondary textMult"
+                            data-filter=".photography">Photography</button>
+                        <button type="button" class="btn btn-secondary textMult" data-filter=".design">Design</button>
                     </div>
                     <div class="row grid">
 
@@ -283,7 +396,8 @@
                                                 elit. Corrupti
                                                 obcaecati, voluptate omnis aspernatur cum quidem totam a dolorem nihil
                                                 quos aut digniss!</div>
-                                            <button class="btn btn-primary btnViewMore">View More</button>
+                                            <button class="btn btn-primary btnViewMore" data-toggle="modal"
+                                                data-target="#ModalViewMore">View More</button>
                                         </div>
                                     </figcaption>
                                 </figure>
@@ -292,7 +406,7 @@
                         <div class="col-md-6 col-sm-12 element-item design">
                             <div class="our-project">
                                 <figure
-                                    class="c4-izmir c4-border-vert c4-gradient-top-right c4-image-zoom-in animationScale item"
+                                    class="c4-izmir c4-border-corners-1 c4-gradient-bottom-left c4-image-zoom-out animationScale item"
                                     style=" --secondary-color: #ec38bc; ">
                                     <img src="./img/prj-04.jpg" alt="prj-04.jpg">
                                     <figcaption class="c4-layout-center-center c4-delay-200">
@@ -329,7 +443,7 @@
                         <div class="col-md-6 col-sm-12 element-item design">
                             <div class="our-project">
                                 <figure
-                                    class="c4-izmir c4-border-vert c4-gradient-top-right c4-image-zoom-in animationScale item"
+                                    class="c4-izmir c4-border-corners-1 c4-gradient-bottom-left c4-image-zoom-out animationScale item"
                                     style="--primary-color: #7303c0; ">
                                     <img src="./img/prj-05.jpg" alt="prj-05.jpg">
                                     <figcaption class="c4-layout-center-center c4-delay-200">
@@ -367,7 +481,7 @@
                         <div class="col-md-6 col-sm-12 element-item design">
                             <div class="our-project">
                                 <figure
-                                    class="c4-izmir c4-border-vert c4-gradient-top c4-image-zoom-in animationScale item"
+                                    class="c4-izmir c4-border-corners-1 c4-gradient-bottom-left c4-image-zoom-out animationScale item"
                                     style="--primary-color: #7303c0;">
                                     <img src="./img/prj-06.jpg" alt="prj-06.jpg">
                                     <figcaption class="c4-layout-center-center c4-delay-200">
@@ -410,23 +524,25 @@
             <!-- #region Group tool -->
             <div id="groupTool">
                 <dl class="toolItem">
-                    <a href="#" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="left"
-                        html=true data-content="home">
+                    <button type="button" class="navItem" onclick="handleScrollto('body')" data-trigger="hover"
+                        data-container="body" data-toggle="popover" data-placement="left" html=true data-content="home">
                         <img src='./img/avatar.jpg' alt="avatarUser" class="icon avatarUser">
-                    </a>
+                    </button>
                 </dl>
                 <dl class="toolItem ">
-                    <a href="#kinhNghiem" data-trigger="hover" data-container="body" data-toggle="popover"
-                        data-placement="left" html=true data-content="experience">
+                    <button type="button" class="navItem" onclick="handleScrollto('kinhNghiem')" data-trigger="hover"
+                        data-container="body" data-toggle="popover" data-placement="left" html=true
+                        data-content="experience">
                         <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66" class="icon">
                             <path id="experienceIcon"
                                 d="M56.1,12.2H44.51v-.245c0-4.443-3.35-14.531-7.71-14.531H27.39c-4.36,0-7.89,10.1-7.89,14.531V12.2H7.9A7.987,7.987,0,0,0,0,20.249V53.371a7.981,7.981,0,0,0,7.9,8.051H56.1A7.981,7.981,0,0,0,64,53.371V20.249A7.981,7.981,0,0,0,56.1,12.2Zm-34.24-.245C21.86,8.844,24.34.821,27.39.821H36.8c3.05,0,5.33,8.024,5.33,11.132V12.2H21.86ZM7.9,14.613H56.1a5.589,5.589,0,0,1,5.53,5.636V31.337H37.98V28.9a1.194,1.194,0,0,0-1.18-1.2H27.22a1.187,1.187,0,0,0-1.18,1.2v2.436H2.37V20.249A5.589,5.589,0,0,1,7.9,14.613Zm27.71,15.5v4.861H28.4V30.114Zm20.49,28.9H7.9a5.589,5.589,0,0,1-5.53-5.636V33.752H26.02v2.436a1.187,1.187,0,0,0,1.18,1.2h9.58a1.194,1.194,0,0,0,1.18-1.2V33.752H61.61V53.371A5.568,5.568,0,0,1,56.1,59.017Z"
                                 transform="translate(1 3.578)" stroke="#000" stroke-width="2" />
                         </svg>
-                    </a>
+                    </button>
                 </dl>
-                <dl class="toolItem "><a href="#duAn_portfolio" data-trigger="hover" data-container="body"
-                        data-toggle="popover" data-placement="left" html=true data-content="portfolio">
+                <dl class="toolItem "><button type="button" class="navItem" onclick="handleScrollto('duAn_portfolio')"
+                        data-trigger="hover" data-container="body" data-toggle="popover" data-placement="left" html=true
+                        data-content="portfolio">
                         <svg xmlns="http://www.w3.org/2000/svg" width="74.563" height="56.172"
                             viewBox="0 0 74.563 56.172" class="icon">
                             <g id="portfolioIcon" transform="translate(-0.5 -6.5)">
@@ -439,10 +555,10 @@
                             </g>
                         </svg>
 
-                    </a></dl>
-                <dl class="toolItem "><a href="#" data-trigger="hover" data-container="body" data-toggle="popover"
-                        data-placement="left" html=true data-content="references"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="76.769" height="71.292"
+                    </button></dl>
+                <dl class="toolItem "><button type="button" class="navItem" onclick="handleScrollto('body')"
+                        data-trigger="hover" data-container="body" data-toggle="popover" data-placement="left" html=true
+                        data-content="references"><svg xmlns="http://www.w3.org/2000/svg" width="76.769" height="71.292"
                             viewBox="0 0 76.769 71.292" class="icon">
                             <g id="referencesIcon" transform="translate(-1284 -494.509)">
                                 <g id="layer1" transform="translate(1284 494.509)">
@@ -455,20 +571,22 @@
                                     transform="matrix(1, 0.017, -0.017, 1, 1310.093, 474.302)" />
                             </g>
                         </svg>
-                    </a></dl>
-                <dl class="toolItem "><a href="#" data-trigger="hover" data-container="body" data-toggle="popover"
-                        data-placement="left" html=true data-content="contact"><svg id="contactIcon"
-                            xmlns="http://www.w3.org/2000/svg" width="76.771" height="76.77" viewBox="0 0 76.771 76.77"
-                            class="icon">
+                    </button></dl>
+                <dl class="toolItem ">
+                    <button type="button" class="navItem" onclick="handleScrollto('body')" data-trigger="hover"
+                        data-container="body" data-toggle="popover" data-placement="left" html=true
+                        data-content="contact"><svg id="contactIcon" xmlns="http://www.w3.org/2000/svg" width="76.771"
+                            height="76.77" viewBox="0 0 76.771 76.77" class="icon">
                             <path id="Path_263" data-name="Path 263"
                                 d="M65.893,8H10.877c-3.8,0-6.843,3.4-6.843,7.6L4,61.174c0,4.2,3.077,7.6,6.877,7.6H65.893c3.8,0,6.877-3.4,6.877-7.6V15.6C72.77,11.4,69.693,8,65.893,8Zm0,15.193L38.385,42.183,10.877,23.193V15.6L38.385,34.587,65.893,15.6Z"
                                 transform="translate(0)" />
                             <path id="Path_264" data-name="Path 264" d="M0,0H76.77V76.77H0Z" fill="none" />
                         </svg>
-                    </a>
+                    </button>
                 </dl>
-                <dl class="toolItem "><a href="#" data-trigger="hover" data-container="body" data-toggle="popover"
-                        data-placement="left" html=true data-content="blog">
+                <dl class="toolItem ">
+                    <button type="button" class="navItem" onclick="handleScrollto('body')" data-trigger="hover"
+                        data-container="body" data-toggle="popover" data-placement="left" html=true data-content="blog">
                         <svg xmlns="http://www.w3.org/2000/svg" width="77.985" height="69.336"
                             viewBox="0 0 77.985 69.336" class="icon">
                             <path id="blogIcon"
@@ -476,7 +594,7 @@
                                 transform="translate(-0.055 0.024)" />
                         </svg>
 
-                    </a></dl>
+                    </button></dl>
             </div>
             <!-- #endregion -->
 
@@ -492,52 +610,12 @@
     <script type="text/javascript" src="./plugins/jquery/jquery-3.5.1.min.js"></script>
     <!-- boostrap.bundle.min.js included popper.min.js and bootstrap.min.js -->
     <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="./plugins/slick/slick.min.js"></script>
-    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
-    <!--venobox -->
-    <script type="text/javascript" src="./plugins/venobox/venobox.min.js"></script>
-    <!-- function open side navbar -->
-    <script>
-        function openNav() {
-            let sidebar = document.getElementById("mySidenav");
-            sidebar.style.display = "block";
-            sidebar.style.transform = "translateX(0)";
-            sidebar.style.opacity = "1";
-            document.getElementById('body').style.overflow = 'hidden';
-
-        }
-
-        function closeNav() {
-            let sidebar = document.getElementById("mySidenav");
-            sidebar.style.display = "block";
-            sidebar.style.transform = "translateX(100%)";
-            sidebar.style.opacity = "0.2";
-            document.getElementById('body').style.overflow = 'auto';
-        }
-    </script>
-    <!-- Slick Carousel -->
+    <script type="text/javascript" src="./plugins/slick-1.8.1/slick/slick.min.js"></script>
+    <!-- <script type="text/javascript" src="./plugins/venobox/venobox.min.js"></script> -->
+    <!-- Owl Carousel -->
     <script>
         $(document).ready(function () {
-            $(".slick__carousel").slick({
-                infinite: true,
-                speed: 500,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                dots: true,
-                responsive: [
-                ],
-            });
-            $(".slick-movie").slick({
-                infinite: true,
-                speed: 500,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: false,
-                centerPadding: '15px',
-                responsive: [
-                ],
-            });
+
             $(".venobox").venobox({
                 autoplay: true,
                 overlayColor: 'rgba(29, 28, 28, 0.685)',
@@ -573,7 +651,12 @@
     </script>
     <!-- iostope js library-->
     <script type="text/javascript" src="./vendor/isotope/isotope.min.js"></script>
+
+
+
     <script type="text/javascript">
+
+
         $(document).ready(function () {
             let $btns = $('#duAn_portfolio .btn-group button');
             $('#duAn_portfolio .grid').isotope({
@@ -592,7 +675,28 @@
                 return false;
             });
         })
+
+        $(".slick__carousel").slick({
+            dots: true,
+            arrows: false,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            adaptiveHeight: true,
+        });
+        $(".slick__project").slick({
+            dots: true,
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrow: false,
+            dots: false,
+            useCSS: true,
+        });
+
     </script>
+    <!-- Custom js  -->
     <script type="text/javascript" src="./js/main.js"></script>
 </body>
 

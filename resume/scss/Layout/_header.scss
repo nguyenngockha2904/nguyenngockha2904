@@ -1,38 +1,38 @@
 header {
-  .sidenav {
-    height: 100%;
-    width: 100%;
-    display: none;
-    width: auto;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow-x: hidden;
-    transition: all 0.5s;
-    box-shadow: 1px 0px 3px 1px #00000070;
-    .bgSidenav {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      transition: opacity 0.3s;
-      will-change: opacity;
-      background-color: #000;
-    }
-    #componentInfoCard {
-      width: 282px;
-      position: absolute;
-      right: 0;
-      z-index: 5;
-      background: #fff;
-      top: 0;
-      bottom: 0;
-      transition: transform 0.3s;
-      will-change: transform;
+  .modal {
+    &.modal-right {
+      .modal-dialog {
+        max-width: 380px;
+        min-height: calc(100vh - 0);
+        transform: translate(100%, 0);
+        margin: 0 0 0 auto;
+      }
+      &.show .modal-dialog {
+        transform: translate(15%, 0);
+      }
+      .modal-content {
+        height: 100vh;
+        width: 85%;
+        overflow-y: auto;
+        .btnClose {
+          position: fixed;
+          transform: translate(-42px, 5px);
+          z-index: 1200;
+          top: 0;
+          font-size: 23px;
+          font-weight: 700;
+          line-height: 1;
+          color: #000;
+          padding: 5px 12px;
+          opacity: 0.9;
+          border-radius: 50%;
+          border: none;
+          cursor: pointer;
+        }
+        #componentInfoCard {
+          width: auto;
+        }
+      }
     }
   }
   #header {

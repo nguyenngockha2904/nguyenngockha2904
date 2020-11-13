@@ -5,11 +5,7 @@
       background: transparent;
       border: none;
       font: normal 500 16px/130px var(--roboto);
-      color: $color-grey-0;
-      font-size: $fs-default;
-      font-weight: 600;
-      line-height: 27px;
-      text-transform: capitalize;
+
       cursor: pointer;
       & + button {
         padding: 0 1.5rem;

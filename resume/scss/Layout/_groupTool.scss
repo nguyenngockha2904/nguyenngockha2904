@@ -6,11 +6,15 @@
 
   .toolItem {
     margin-bottom: 2rem;
-    a {
+    .navItem {
       display: block;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      margin: auto;
       .icon {
         height: 30px;
-        width: 30px;
+        width: 25px;
         transition: all 0.5s;
         &.avatarUser {
           box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);

@@ -57,41 +57,53 @@ button:active,
 button:hover .btn:active,
 .btn.active {
   outline: 0px !important;
-  box-shadow: none !important; }
+  box-shadow: none !important;
+  transition: all 600ms ease;
+  transition: all var(--transition-duration) ease; }
 
-header .sidenav {
-  height: 100%;
-  width: 100%;
-  display: none;
-  width: auto;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow-x: hidden;
-  transition: all 0.5s;
-  box-shadow: 1px 0px 3px 1px #00000070; }
-  header .sidenav .bgSidenav {
-    position: absolute;
+.slick-initialized .slick-slide {
+  outline: 0px !important; }
+
+.slick-slide img {
+  width: 100%; }
+
+.slick-prev:before,
+.slick-next:before {
+  color: black; }
+
+.slick-slide img {
+  display: block;
+  height: 50%;
+  width: 98%;
+  margin: auto; }
+
+header .modal.modal-right .modal-dialog {
+  max-width: 380px;
+  min-height: calc(100vh - 0);
+  transform: translate(100%, 0);
+  margin: 0 0 0 auto; }
+header .modal.modal-right.show .modal-dialog {
+  transform: translate(15%, 0); }
+header .modal.modal-right .modal-content {
+  height: 100vh;
+  width: 85%;
+  overflow-y: auto; }
+  header .modal.modal-right .modal-content .btnClose {
+    position: fixed;
+    transform: translate(-42px, 5px);
+    z-index: 1200;
     top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    transition: opacity 0.3s;
-    will-change: opacity;
-    background-color: #000; }
-  header .sidenav #componentInfoCard {
-    width: 282px;
-    position: absolute;
-    right: 0;
-    z-index: 5;
-    background: #fff;
-    top: 0;
-    bottom: 0;
-    transition: transform 0.3s;
-    will-change: transform; }
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    padding: 5px 12px;
+    opacity: 0.9;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer; }
+  header .modal.modal-right .modal-content #componentInfoCard {
+    width: auto; }
 header #header {
   display: flex;
   justify-content: space-between;
@@ -176,20 +188,24 @@ header #header {
   margin-top: 0.7rem; }
   #groupTool .toolItem {
     margin-bottom: 2rem; }
-    #groupTool .toolItem a {
-      display: block; }
-      #groupTool .toolItem a .icon {
+    #groupTool .toolItem .navItem {
+      display: block;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      margin: auto; }
+      #groupTool .toolItem .navItem .icon {
         height: 30px;
-        width: 30px;
+        width: 25px;
         transition: all 0.5s; }
-        #groupTool .toolItem a .icon.avatarUser {
+        #groupTool .toolItem .navItem .icon.avatarUser {
           box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
           height: 45px;
           width: 45px;
           border-radius: 50%; }
-        #groupTool .toolItem a .icon:hover {
+        #groupTool .toolItem .navItem .icon:hover {
           fill: #8c34eb; }
-          #groupTool .toolItem a .icon:hover path {
+          #groupTool .toolItem .navItem .icon:hover path {
             stroke: #8c34eb; }
 
 #kinhNghiem .experience {
@@ -284,11 +300,6 @@ header #header {
     background: transparent;
     border: none;
     font: normal 500 16px/130px var(--roboto);
-    color: #757575;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 27px;
-    text-transform: capitalize;
     cursor: pointer; }
     #duAn_portfolio .btn-group button + button {
       padding: 0 1.5rem; }
@@ -363,7 +374,8 @@ header #header {
     text-transform: uppercase;
     line-height: 1.2; }
   #componentInfoCard .listSocial {
-    padding: 10px; }
+    padding: 10px;
+    justify-content: center; }
     #componentInfoCard .listSocial .nav-item {
       border-radius: 50px; }
       #componentInfoCard .listSocial .nav-item .nav-link .fab {
@@ -373,6 +385,20 @@ header #header {
         background: #8c34eb; }
         #componentInfoCard .listSocial .nav-item:hover .nav-link .fab {
           color: #fff; }
+
+.title {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 50px; }
+
+.textMult {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27px;
+  text-transform: capitalize; }
 
 .paper {
   border-color: #e1e1e1;
@@ -429,6 +455,37 @@ header #header {
   .container-sm {
     margin-left: 310px; } }
 
+#ModalViewMore.modal.show .modal-dialog {
+  max-width: none; }
+#ModalViewMore .modal-content {
+  width: 95%;
+  margin: auto;
+  padding: 2rem 3rem; }
+  #ModalViewMore .modal-content .title {
+    margin-bottom: 5px; }
+  #ModalViewMore .modal-content .dl-horizontal {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 13px;
+    text-align: justify; }
+    #ModalViewMore .modal-content .dl-horizontal dt {
+      font-weight: 700;
+      float: left;
+      width: 100px;
+      overflow: hidden;
+      clear: left;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    #ModalViewMore .modal-content .dl-horizontal dd {
+      width: 100%;
+      margin-left: 10%; }
+  #ModalViewMore .modal-content .imgCarousel .imgCarousel_content img {
+    width: 100vh;
+    height: 100%;
+    max-width: 98%;
+    margin: auto; }
+
 .btn--downloadResume {
   background: #000;
   color: #fff;
@@ -438,7 +495,8 @@ header #header {
   border-color: #4a0c62;
   box-shadow: 0 0 6px 1px #4a0c62; }
   .btn--downloadResume:hover {
-    background: #4a0c62;
-    border-color: #4a0c62; }
+    background: #8c34eb;
+    border: 1px solid #8c34eb;
+    box-shadow: 0 0 10px #8c34eb, 0 0 30px #8c34eb, 0 0 50px #8c34eb; }
 
 /*# sourceMappingURL=style.css.map */
