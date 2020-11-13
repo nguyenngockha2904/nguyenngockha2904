@@ -26,22 +26,5 @@ fillData(
 
 
 
-$(document).ready(function () {
-    let $btns = $('#duAn_portfolio .btn-group button');
-    $('#duAn_portfolio .grid').isotope({
-        percentPosition: true,
-        filter: '*',
-    });
-    $btns.click(function (e) {
-        $('#duAn_portfolio .btn-group button').removeClass('active');
-        e.target.classList.add("active");
-        let selector = $(e.target).attr('data-filter');
-        $('#duAn_portfolio .grid').isotope({
-            filter: selector,
-            percentPosition: true,
-            itemSelector: '.element-item',
-        });
-        return false;
-    });
-})
+
 
