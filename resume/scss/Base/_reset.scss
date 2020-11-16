@@ -53,14 +53,10 @@ body {
     transform: scale(1);
   }
 }
-.wrapper {
-  display: flex;
-  justify-content: center;
-}
 @media (max-width: 991.98px) {
   ///920
   body {
-    background: #9468fe;
+    background: #cabbe9;
   }
 }
 button:focus,
@@ -84,4 +80,36 @@ button:hover .btn:active,
 }
 .avatar {
   border-radius: 50%;
+}
+.container {
+  @media (max-width: 991.98px) {
+    max-width: unset;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+#wrapper {
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  @media (max-width: 991.98px) {
+    display: block;
+  }
+}
+.arrow {
+  @media (max-width: 991.98px) {
+    display: none !important;
+  }
+}
+.popover-body {
+  padding: 0.7rem 0.75rem;
+  color: #212529;
+  letter-spacing: 1px;
+  font-weight: 600;
+  @media (max-width: 991.98px) {
+    display: none;
+  }
 }

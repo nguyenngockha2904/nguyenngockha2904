@@ -31,4 +31,23 @@
       }
     }
   }
+  &.groupTool_Top {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #e1e1e1;
+    margin: 0;
+    position: unset;
+  }
+  @media (max-width: 991.98px) {
+    display: none;
+    &.groupTool_Top {
+      display: flex;
+      .toolItem {
+        margin: 0;
+        padding: 15px;
+      }
+    }
+  }
 }

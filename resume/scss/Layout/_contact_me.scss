@@ -32,7 +32,8 @@
       .btnSubmit {
         .btnViewMore {
           color: #000;
-          border: 1px solid #000;
+          padding: 10px 15px;
+          box-shadow: 0 0 5px 1px #00000091;
           &:hover {
             color: #fff;
             background: $color-primary-1;

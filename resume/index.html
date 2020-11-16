@@ -181,7 +181,7 @@
         <header>
             <div id="mySidenav" class="modal fade modal-right" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
-                    <div class="modal-content">
+                    <div class="modal-content ">
                         <button type="button" class="btnClose" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -210,6 +210,64 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="p-2">
+                            <form class="searchForm">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="" placeholder="Search">
+                                    <div class="input-group-prepend">
+                                        <button type="submit" class="btn btn-primary BtnSearch">
+                                            <span class="fas fa-search"></span>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </form>
+                            <div class="SideBar_subTitle">Popular posts</div>
+                            <div class="group_portfolio">
+                                <div id="portfolio" class="portfolio_item">
+                                    <div class="row p-0 m-0">
+                                        <div id="hinhAnh" class="col-5 portfolio_hinhAnh"><img src="./img/portfolio.png"
+                                                alt="portfolio1"></div>
+                                        <div class="col-7 p-0">
+                                            <div id="tenDuAn" class="portfolio_tenDuAn">instruction</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio_item">
+                                    <div class="row p-0 m-0">
+                                        <div class="col-5 portfolio_hinhAnh"><img src="./img/movieStarPortfolio.png"
+                                                alt="movieStarPortfolio"></div>
+                                        <div class="col-7 p-0">
+                                            <div class="portfolio_tenDuAn">movieStar</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio_item">
+                                    <div class="row p-0 m-0">
+                                        <div class="col-5 portfolio_hinhAnh"><img src="./img/tixPortfolio.png"
+                                                alt="Tix"></div>
+                                        <div class="col-7 p-0">
+                                            <div class="portfolio_tenDuAn">Tix</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio_item">
+                                    <div class="row  p-0 m-0">
+                                        <div class="col-5 portfolio_hinhAnh"><img src="./img/UdemyPortfolio.png"
+                                                alt="UdemyPortfolio"></div>
+                                        <div class="col-7 p-0">
+                                            <div class="portfolio_tenDuAn">
+                                                Udemy
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
@@ -223,24 +281,24 @@
                     </li>
                 </ul>
                 <ul class="nav justify-content-end navBar">
-                    <li class="nav-item">
+                    <li class="nav-item resp-none">
                         <a class="nav-link " href="#">home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item resp-none">
                         <a class="nav-link" href="#">portfolio</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown resp-none">
                         <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Pages
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="dropdown-menu resp-none" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown resp-none">
                         <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Blogs
@@ -251,7 +309,7 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item resp-none">
 
                     </li>
                     <li class="nav-item">
@@ -266,11 +324,80 @@
             </nav>
 
         </header>
+        <!-- #region Group tool Top -->
+        <div id="groupTool" class="groupTool_Top">
+            <dl class="toolItem ">
+                <button type="button" class="navItem" onclick="handleScrollto('kinhNghiem')" data-trigger="hover"
+                    data-container="body" data-toggle="popover" data-placement="left" html=true
+                    data-content="experience">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66" class="icon">
+                        <path id="experienceIcon"
+                            d="M56.1,12.2H44.51v-.245c0-4.443-3.35-14.531-7.71-14.531H27.39c-4.36,0-7.89,10.1-7.89,14.531V12.2H7.9A7.987,7.987,0,0,0,0,20.249V53.371a7.981,7.981,0,0,0,7.9,8.051H56.1A7.981,7.981,0,0,0,64,53.371V20.249A7.981,7.981,0,0,0,56.1,12.2Zm-34.24-.245C21.86,8.844,24.34.821,27.39.821H36.8c3.05,0,5.33,8.024,5.33,11.132V12.2H21.86ZM7.9,14.613H56.1a5.589,5.589,0,0,1,5.53,5.636V31.337H37.98V28.9a1.194,1.194,0,0,0-1.18-1.2H27.22a1.187,1.187,0,0,0-1.18,1.2v2.436H2.37V20.249A5.589,5.589,0,0,1,7.9,14.613Zm27.71,15.5v4.861H28.4V30.114Zm20.49,28.9H7.9a5.589,5.589,0,0,1-5.53-5.636V33.752H26.02v2.436a1.187,1.187,0,0,0,1.18,1.2h9.58a1.194,1.194,0,0,0,1.18-1.2V33.752H61.61V53.371A5.568,5.568,0,0,1,56.1,59.017Z"
+                            transform="translate(1 3.578)" stroke="#000" stroke-width="2" />
+                    </svg>
+                </button>
+            </dl>
+            <dl class="toolItem "><button type="button" class="navItem" onclick="handleScrollto('duAn_portfolio')"
+                    data-trigger="hover" data-container="body" data-toggle="popover" data-placement="left" html=true
+                    data-content="portfolio">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="74.563" height="56.172" viewBox="0 0 74.563 56.172"
+                        class="icon">
+                        <g id="portfolioIcon" transform="translate(-0.5 -6.5)">
+                            <path id="Path_258" data-name="Path 258"
+                                d="M1,62.172H74.563V7H1Zm3.065-3.065V47.481L20.923,30.623,36.249,45.948,62.3,19.895l9.2,9.2V59.107ZM71.5,10.065V24.756l-9.2-9.2L36.249,41.614,20.923,26.289,4.065,43.147V10.065Z"
+                                transform="translate(0 0)" stroke="#000" stroke-linejoin="round" stroke-width="1" />
+                            <path id="Path_259" data-name="Path 259"
+                                d="M26.663,27.326A7.663,7.663,0,1,0,19,19.663,7.671,7.671,0,0,0,26.663,27.326Zm0-12.26a4.6,4.6,0,1,1-4.6,4.6A4.6,4.6,0,0,1,26.663,15.065Z"
+                                transform="translate(9.586 2.663)" stroke="#000" stroke-width="1" />
+                        </g>
+                    </svg>
+
+                </button></dl>
+            <dl class="toolItem ">
+                <button type="button" class="navItem" onclick="handleScrollto('desc_cv')" data-trigger="hover"
+                    data-container="body" data-toggle="popover" data-placement="left" html=true
+                    data-content="references"><svg xmlns="http://www.w3.org/2000/svg" width="76.769" height="71.292"
+                        viewBox="0 0 76.769 71.292" class="icon">
+                        <g id="referencesIcon" transform="translate(-1284 -494.509)">
+                            <g id="layer1" transform="translate(1284 494.509)">
+                                <path id="path4282"
+                                    d="M66.8,2c3.2,0,6.09.843,8.107,2.86s2.86,4.91,2.86,8.107V40.384c0,3.2-.853,6.093-2.881,8.086s-4.9,2.8-8.086,2.8l-9.542.171H40.627L22.281,72.364a2.742,2.742,0,0,1-4.8-1.81l-.043-19.182-5.472-.107c-3.183,0-6.058-.8-8.086-2.8S1,43.583,1,40.384V12.967c0-3.2.853-6.073,2.87-8.065S8.73,2.093,11.892,2.011H66.8Zm0,5.483H12.042c-2.321.06-3.592.613-4.316,1.328s-1.243,1.871-1.243,4.155V40.384c0,2.285.518,3.476,1.232,4.177s1.952,1.221,4.252,1.221h.064l8.215.171A2.742,2.742,0,0,1,22.923,48.7l.032,14.587L37.328,46.9a2.742,2.742,0,0,1,2.056-.932h17.8l9.564-.182H66.8c2.3,0,3.538-.521,4.252-1.221s1.232-1.892,1.232-4.177V12.967c0-2.283-.528-3.505-1.253-4.23S69.086,7.483,66.8,7.483Z"
+                                    transform="translate(-1 -2)" />
+                            </g>
+                            <path id="quote-left-solid"
+                                d="M24.033,43.6H19.89V40.287A3.318,3.318,0,0,1,23.2,36.972h.414a1.24,1.24,0,0,0,1.243-1.243V33.243A1.24,1.24,0,0,0,23.619,32H23.2a8.285,8.285,0,0,0-8.287,8.287V52.718A2.487,2.487,0,0,0,17.4,55.2h6.63a2.487,2.487,0,0,0,2.486-2.486v-6.63A2.487,2.487,0,0,0,24.033,43.6Zm-14.917,0H4.972V40.287a3.318,3.318,0,0,1,3.315-3.315H8.7a1.24,1.24,0,0,0,1.243-1.243V33.243A1.24,1.24,0,0,0,8.7,32H8.287A8.285,8.285,0,0,0,0,40.287V52.718A2.487,2.487,0,0,0,2.486,55.2h6.63A2.487,2.487,0,0,0,11.6,52.718v-6.63A2.487,2.487,0,0,0,9.116,43.6Z"
+                                transform="matrix(1, 0.017, -0.017, 1, 1310.093, 474.302)" />
+                        </g>
+                    </svg>
+                </button></dl>
+            <dl class="toolItem ">
+                <button type="button" class="navItem" onclick="handleScrollto('contact_me')" data-trigger="hover"
+                    data-container="body" data-toggle="popover" data-placement="left" html=true
+                    data-content="contact"><svg id="contactIcon" xmlns="http://www.w3.org/2000/svg" width="76.771"
+                        height="76.77" viewBox="0 0 76.771 76.77" class="icon">
+                        <path id="Path_263" data-name="Path 263"
+                            d="M65.893,8H10.877c-3.8,0-6.843,3.4-6.843,7.6L4,61.174c0,4.2,3.077,7.6,6.877,7.6H65.893c3.8,0,6.877-3.4,6.877-7.6V15.6C72.77,11.4,69.693,8,65.893,8Zm0,15.193L38.385,42.183,10.877,23.193V15.6L38.385,34.587,65.893,15.6Z"
+                            transform="translate(0)" />
+                        <path id="Path_264" data-name="Path 264" d="M0,0H76.77V76.77H0Z" fill="none" />
+                    </svg>
+                </button>
+            </dl>
+            <dl class="toolItem ">
+                <button type="button" class="navItem" onclick="handleScrollto('body')" data-trigger="hover"
+                    data-container="body" data-toggle="popover" data-placement="left" html=true data-content="blog">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="77.985" height="69.336" viewBox="0 0 77.985 69.336"
+                        class="icon">
+                        <path id="blogIcon"
+                            d="M74,1.293a2.106,2.106,0,0,0-3.832-.162,23.219,23.219,0,0,1-20.3,11.848H39.043a26,26,0,0,0-26,26,26.772,26.772,0,0,0,.2,2.776C21.888,35.563,34.358,30.31,52.042,30.31a2.166,2.166,0,1,1,0,4.333C18,34.643,3.568,55.508.372,63.348A4.339,4.339,0,0,0,8.4,66.638a35.623,35.623,0,0,1,9.735-12.268A25.94,25.94,0,0,0,41.819,64.824c21.258-1.544,36.22-20.608,36.22-43.952A49.238,49.238,0,0,0,74,1.293Z"
+                            transform="translate(-0.055 0.024)" />
+                    </svg>
+
+                </button></dl>
+        </div>
+        <!-- #endregion -->
 
 
-
-        <div id="wrapper" style="position: relative; text-align: center;margin-top: 10px; display: flex;
-        align-items: flex-start;">
+        <div id="wrapper">
             <div id="boxInfo">
                 <div id="componentInfoCard">
                     <div class="w-100 text-center mt-5 mb-4 px-3">
@@ -308,10 +435,11 @@
                             eligendi sapiente quo distinctio reiciendis ullam voluptates alias quos cupiditate! Dolorem
                             aliquid vero corrupti repellendus, voluptatem vitae. Ab corrupti expedita fugit aperiam vero
                             placeat explicabo, ut voluptates, ex nulla ipsa ipsum!</div>
+                        <div class="my-5 line"></div>
                     </div>
-                    <div class="my-5 line"></div>
+
                     <div class="row justify-content-center">
-                        <div id="thongTinCaNhan" class="col-6 col-sm-6">
+                        <div id="thongTinCaNhan" class="col-12 col-sm-6">
                             <div class="subTitle">personal information</div>
                             <div class="my-4">
                                 <dl class="groupInfo">
@@ -339,6 +467,7 @@
                                     <dd>Available</dd>
                                 </dl>
                             </div>
+                            <div class="my-5 line line_res576"></div>
                         </div>
                         <div id="ngonNgu" class="col-12  col-sm-6">
                             <div class="subTitle">languages</div>
@@ -380,7 +509,7 @@
                     <div class="titlePaper">Work experience</div>
                     <div class="experience">
                         <div id="state-end-date" class="experience-box">
-                            <div class="d-flex position-relative">
+                            <div class="experience_groupTime">
                                 <time class="experience-date" datetime="2014-01T2016-03">
                                     <span>Jan <strong class="text-upper">2014</strong> - Mar
                                         <strong>2016</strong></span>
@@ -398,7 +527,7 @@
                             </div>
                         </div>
                         <div id="state-end-date" class="experience-box">
-                            <div class="d-flex position-relative">
+                            <div class="experience_groupTime">
                                 <time class="experience-date" datetime="2014-01T2016-03">
                                     <span>Jan <strong class="text-upper">2014</strong> - Mar
                                         <strong>2016</strong></span>
@@ -638,22 +767,22 @@
                     <div class="titlePaper">Clients</div>
                     <section class="container clientDiv">
                         <div class="row">
-                            <div class="col-4 client_item">
+                            <div class="col-6 col-sm-4 client_item">
                                 <a href="#"><img src="img/logo-wordpress.png" alt="WordPress"></a>
                             </div>
-                            <div class="col-4 client_item">
+                            <div class="col-6 col-sm-4 client_item">
                                 <a href="#"><img src="img/logo-compass.png" alt="Compass"></a>
                             </div>
-                            <div class="col-4 client_item">
+                            <div class="col-6 col-sm-4 client_item">
                                 <a href="#"><img src="img/logo-jquery.png" alt="jQuery"></a>
                             </div>
-                            <div class="col-4 client_item">
+                            <div class="col-6 col-sm-4 client_item">
                                 <a href="#"><img src="img/logo-teaspoon.png" alt="teaspoon"></a>
                             </div>
-                            <div class="col-4 client_item">
+                            <div class="col-6 col-sm-4 client_item">
                                 <a href="#"><img src="img/logo-evernote.png" alt="evernote"></a>
                             </div>
-                            <div class="col-4 client_item">
+                            <div class="col-6 col-sm-4 client_item">
                                 <a href="#"><img src="img/logo-bootstrap.png" alt="Bootstrap"></a>
                             </div>
                         </div>
@@ -662,72 +791,74 @@
                 </section>
                 <section id="contact_me" class="paper" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
                     <div class="titlePaper">contact me</div>
-                    <div class="crt-paper-cont paper-padd clear-mrg">
-                        <div>
-                            <ul class="nav listSocial">
-                                <li class="nav-item">
-                                    <div id="fackbooklink" class="nav-link "><span class="fab fa-facebook-f"></span>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <div id="linkGithub" class="nav-link " href="#"><span class="fab fa-github"></span>
-                                    </div>
-                                </li>
-                                <li class="nav-item"><a class="nav-link " href="#"><span
-                                            class="fab fa-google-plus-g"></span></a></li>
-                                <li class="nav-item"><a class="nav-link " href="#"><span
-                                            class="fab fa-instagram"></span></a>
-                                </li>
-                                <li class="nav-item"><a class="nav-link " href="#"><span
-                                            class="fab fa-pinterest"></span></a>
-                                </li>
-                            </ul>
-                        </div>
 
-                        <div class="container">
-                            <div class=" textMult text-center h2" style="color:#000;font-size: 18px;">fell free to
-                                contact
-                                me the core of
-                                your
-                                marketing</div>
-                            <form action="#" method="post" class="contactForm">
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-12 form-label " for="author">Your Name</label>
-                                    <input id="author" class="col-sm-9 col-12 form-control" type="text">
+                    <div>
+                        <ul class="nav listSocial">
+                            <li class="nav-item">
+                                <div id="fackbooklink" class="nav-link "><span class="fab fa-facebook-f"></span>
                                 </div>
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-12 form-label" for="email">Your E-mail</label>
-
-                                    <input id="email" class="col-sm-9 col-12 form-control" type="email"
-                                        required="required">
-
+                            </li>
+                            <li class="nav-item">
+                                <div id="linkGithub" class="nav-link " href="#"><span class="fab fa-github"></span>
                                 </div>
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-12 form-label" for="url">Subject</label>
-
-                                    <input id="url" class="col-sm-9 col-12 form-control" type="url">
-
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-12 form-label" for="comment">Your Comment</label>
-
-                                    <textarea id="comment" rows="4" cols="50"
-                                        class="col-sm-9 col-12 form-control textAre"></textarea>
-
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-sm-3 col-12"></div>
-
-                                    <div class="col-sm-9 col-12 p-0  btnSubmit">
-                                        <button class="btn btn-primary textMult btnViewMore" type="submit">Post Your
-                                            Comment</button>
-                                    </div>
-                                </div>
-
-                            </form>
-                        </div>
-
+                            </li>
+                            <li class="nav-item"><a class="nav-link " href="#"><span
+                                        class="fab fa-google-plus-g"></span></a></li>
+                            <li class="nav-item"><a class="nav-link " href="#"><span
+                                        class="fab fa-instagram"></span></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link " href="#"><span
+                                        class="fab fa-pinterest"></span></a>
+                            </li>
+                        </ul>
                     </div>
+
+                    <div class="container mb-5">
+                        <div class=" textMult text-center h2" style="color:#000;font-size: 18px;">fell free to
+                            contact
+                            me the core of
+                            your
+                            marketing</div>
+                        <form action="#" method="post" class="contactForm">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-12 form-label " for="author">Your Name</label>
+                                <input id="author" class="col-sm-9 col-12 form-control" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-12 form-label" for="email">Your E-mail</label>
+
+                                <input id="email" class="col-sm-9 col-12 form-control" type="email" required="required">
+
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-12 form-label" for="url">Subject</label>
+
+                                <input id="url" class="col-sm-9 col-12 form-control" type="url">
+
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-12 form-label" for="comment">Your Comment</label>
+
+                                <textarea id="comment" rows="4" cols="50"
+                                    class="col-sm-9 col-12 form-control textAre"></textarea>
+
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-3 col-12"></div>
+
+                                <div class="col-sm-9 col-12 p-0  btnSubmit">
+                                    <button class="btn btn-primary textMult btnViewMore" type="submit">Post Your
+                                        Comment</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.55796912468!2d106.65749631417225!3d10.84510026088939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529a4ba221a15%3A0x4b75ce3bc047382f!2zMjMyIMSQxrDhu51uZyBz4buRIDgsIFBoxrDhu51uZyAxMSwgR8OyIFbhuqVwLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1605531589718!5m2!1svi!2s"
+                        width="400" height="300" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+
                 </section>
             </div>
             <!-- #region Group tool -->
@@ -831,7 +962,7 @@
     <script type="text/javascript" src="./plugins/slick-1.8.1/slick/slick.min.js"></script>
     <script>
         $(document).ready(function () {
-            new AOS.init();
+            new AOS.init({ disable: 'mobile' });
 
             $('body').on('mouseenter mouseleave', '.dropdown', function (e) {
                 var _d = $(e.target).closest('.dropdown');
@@ -843,11 +974,12 @@
             });
             // $(".toolItem").popover({ trigger: "hover" });
             $(function () {
-                $('[data-toggle="popover"]').popover()
+                $('[data-toggle="popover"]').popover({ disable: 'mobile' })
             })
             $(function () {
                 $('.example-popover').popover({
-                    container: 'body'
+                    container: 'body',
+                    disable: 'mobile'
                 })
             })
         });
@@ -895,7 +1027,7 @@
                 slidesToScroll: 3,
                 arrows: true,
                 centerMode: true,
-                autoplaySpeed: 3000,
+                autoplaySpeed: 1000,
                 autoplay: true,
 
             });

@@ -11,4 +11,23 @@
     padding: 20px;
     border-radius: 5px;
   }
+  @media (max-width: 991.98px) {
+    position: unset;
+    box-shadow: 0 0 black;
+    border-radius: 0;
+    width: 100%;
+    background: #cabbe9;
+    #componentInfoCard {
+      margin: auto;
+      margin-bottom: 3rem;
+    }
+    .divDownloadResume {
+      background: #fff;
+      width: 100%;
+      border-radius: 0;
+      .btn--downloadResume {
+        padding: 10px 15%;
+      }
+    }
+  }
 }
