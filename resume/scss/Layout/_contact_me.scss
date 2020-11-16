@@ -1,0 +1,47 @@
+#contact_me {
+  .contactForm {
+    margin-top: 50px;
+    .form-group {
+      .form-label {
+        line-height: 1.1em;
+        font-size: 0.82em;
+        letter-spacing: 0.02em;
+        margin-top: 2px;
+      }
+      .form-control {
+        width: 100%;
+        height: 40px;
+        padding: 10px 15px;
+        line-height: 20px;
+        color: inherit;
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 14px;
+        font-style: normal;
+        background-image: none;
+        border: 1px solid transparent;
+        transition: border 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+        background-color: #f3f3f3;
+        &.textAre {
+          height: 150px;
+        }
+        &:focus {
+          box-shadow: 0 0 black;
+        }
+      }
+      .btnSubmit {
+        .btnViewMore {
+          color: #000;
+          border: 1px solid #000;
+          &:hover {
+            color: #fff;
+            background: $color-primary-1;
+            border: 1px solid $color-primary-1;
+            box-shadow: 0 0 10px $color-primary-1, 0 0 20px $color-primary-1,
+              0 0 30px $color-primary-1;
+          }
+        }
+      }
+    }
+  }
+}

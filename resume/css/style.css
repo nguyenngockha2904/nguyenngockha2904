@@ -64,18 +64,15 @@ button:hover .btn:active,
 .slick-initialized .slick-slide {
   outline: 0px !important; }
 
-.slick-slide img {
-  width: 100%; }
-
 .slick-prev:before,
 .slick-next:before {
   color: black; }
 
-.slick-slide img {
-  display: block;
-  height: 50%;
-  width: 98%;
-  margin: auto; }
+.slick-track {
+  width: 100%; }
+
+.avatar {
+  border-radius: 50%; }
 
 header .modal.modal-right .modal-dialog {
   max-width: 380px;
@@ -340,6 +337,86 @@ header #header {
         border: 1px solid #8c34eb;
         box-shadow: 0 0 10px #8c34eb, 0 0 40px #8c34eb, 0 0 80px #8c34eb; }
 
+#desc_cv .referencesUser {
+  margin-bottom: 25px; }
+  #desc_cv .referencesUser .references_div .refInfo .refAuthor {
+    font-size: 14px; }
+    #desc_cv .referencesUser .references_div .refInfo .refAuthor .addressRef {
+      color: #757575; }
+  #desc_cv .referencesUser .references_div .refInfo .contentRef {
+    font-size: 14px;
+    line-height: 1.5;
+    border-width: 0;
+    max-width: 100%;
+    margin: 25px 0 0;
+    font-size: 0.875em;
+    letter-spacing: 1px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    text-align: justify;
+    position: relative; }
+    #desc_cv .referencesUser .references_div .refInfo .contentRef::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      width: 100%;
+      background-color: #e1e1e1; }
+#desc_cv .clientDiv .client_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px; }
+
+#contact_me .contactForm {
+  margin-top: 50px; }
+  #contact_me .contactForm .form-group .form-label {
+    line-height: 1.1em;
+    font-size: 0.82em;
+    letter-spacing: 0.02em;
+    margin-top: 2px; }
+  #contact_me .contactForm .form-group .form-control {
+    width: 100%;
+    height: 40px;
+    padding: 10px 15px;
+    line-height: 20px;
+    color: inherit;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    background-image: none;
+    border: 1px solid transparent;
+    transition: border 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+    background-color: #f3f3f3; }
+    #contact_me .contactForm .form-group .form-control.textAre {
+      height: 150px; }
+    #contact_me .contactForm .form-group .form-control:focus {
+      box-shadow: 0 0 black; }
+  #contact_me .contactForm .form-group .btnSubmit .btnViewMore {
+    color: #000;
+    border: 1px solid #000; }
+    #contact_me .contactForm .form-group .btnSubmit .btnViewMore:hover {
+      color: #fff;
+      background: #8c34eb;
+      border: 1px solid #8c34eb;
+      box-shadow: 0 0 10px #8c34eb, 0 0 20px #8c34eb, 0 0 30px #8c34eb; }
+
+.listSocial {
+  padding: 10px;
+  justify-content: center; }
+  .listSocial .nav-item {
+    border-radius: 50px; }
+    .listSocial .nav-item .nav-link .fab {
+      color: #010101; }
+    .listSocial .nav-item:hover {
+      cursor: pointer;
+      background: #8c34eb; }
+      .listSocial .nav-item:hover .nav-link .fab {
+        color: #fff; }
+
 #componentInfoCard {
   width: 282px; }
   #componentInfoCard #avatar,
@@ -373,18 +450,6 @@ header #header {
     letter-spacing: 1px;
     text-transform: uppercase;
     line-height: 1.2; }
-  #componentInfoCard .listSocial {
-    padding: 10px;
-    justify-content: center; }
-    #componentInfoCard .listSocial .nav-item {
-      border-radius: 50px; }
-      #componentInfoCard .listSocial .nav-item .nav-link .fab {
-        color: #010101; }
-      #componentInfoCard .listSocial .nav-item:hover {
-        cursor: pointer;
-        background: #8c34eb; }
-        #componentInfoCard .listSocial .nav-item:hover .nav-link .fab {
-          color: #fff; }
 
 .title {
   text-transform: uppercase;
@@ -480,6 +545,65 @@ header #header {
     #ModalViewMore .modal-content .dl-horizontal dd {
       width: 100%;
       margin-left: 10%; }
+  #ModalViewMore .modal-content .slick__carousel .slick-list {
+    border-radius: 5px;
+    height: calc(87vh - 100px);
+    width: calc(115vh - 100px);
+    overflow: hidden;
+    margin: auto; }
+  #ModalViewMore .modal-content .slick__carousel .imgCarousel_content img {
+    height: calc(87vh - 100px);
+    width: calc(116vh - 100px);
+    margin: 0 auto; }
+  #ModalViewMore .modal-content .slick__carousel .slick-dots {
+    opacity: 0; }
+    #ModalViewMore .modal-content .slick__carousel .slick-dots li button::before {
+      font-size: 15px; }
+  #ModalViewMore .modal-content .slick__carousel:hover .slick-dots {
+    transition: all 0.5s;
+    opacity: 1;
+    transform: translateY(-50px); }
+  #ModalViewMore .modal-content .slick__project .slick-list {
+    border-radius: 5px;
+    overflow: hidden;
+    height: calc(35vh - 100px);
+    width: calc(92vh - 100px);
+    margin: auto; }
+  #ModalViewMore .modal-content .slick__project .slick-arrow {
+    z-index: 5; }
+  #ModalViewMore .modal-content .slick__project .imgCarousel_content figure {
+    margin: 0 5px; }
+    #ModalViewMore .modal-content .slick__project .imgCarousel_content figure img {
+      height: calc(40vh - 100px);
+      width: calc(48vh - 100px);
+      margin: 0 auto; }
+  @media (max-width: 1140px) {
+    #ModalViewMore .modal-content .slick__project .slick-list {
+      height: calc(35vh - 100px);
+      width: calc(92vh - 100px); }
+    #ModalViewMore .modal-content .slick__project .imgCarousel_content figure img {
+      height: calc(40vh - 100px);
+      width: calc(48vh - 100px);
+      margin: 0 auto; } }
+
+.itemHover {
+  --primary-color: #4a0c62;
+  --secondary-color: #8c34eb; }
+
+.btnViewMore {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 5px;
+  line-height: 13px;
+  text-transform: capitalize;
+  letter-spacing: 1px; }
+  .btnViewMore:hover {
+    background: #8c34eb;
+    border: 1px solid #8c34eb;
+    box-shadow: 0 0 10px #8c34eb, 0 0 40px #8c34eb, 0 0 80px #8c34eb; }
 
 .btn--downloadResume {
   background: #000;

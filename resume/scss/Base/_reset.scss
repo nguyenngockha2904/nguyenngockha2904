@@ -75,16 +75,13 @@ button:hover .btn:active,
 .slick-initialized .slick-slide {
   outline: 0px !important;
 }
-.slick-slide img {
-  width: 100%;
-}
 .slick-prev:before,
 .slick-next:before {
   color: black;
 }
-.slick-slide img {
-  display: block;
-  height: 50%;
-  width: 98%;
-  margin: auto;
+.slick-track {
+  width: 100%;
+}
+.avatar {
+  border-radius: 50%;
 }

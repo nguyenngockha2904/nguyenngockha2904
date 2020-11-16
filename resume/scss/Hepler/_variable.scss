@@ -5,6 +5,7 @@ $color-white-0: #ffffff;
 $color-black-0: #010101;
 $color-grey-0: #757575;
 $color-blue-light-0: #dff0ea;
+$color-line: #e1e1e1;
 // fontsize
 $fs-h1: 30px;
 $fs-h2: 24px;
@@ -20,6 +21,7 @@ $ff-Logo: "Lobster", cursive;
 $breakpoints: (
   "max-sreen": 1375px,
   "extra-large": 1200px,
+  "xl": 1140px,
   "large": 992px,
   "medium": 769px,
   "small": 576px,
