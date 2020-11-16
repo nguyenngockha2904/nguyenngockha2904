@@ -548,6 +548,9 @@ header #header {
       background: #8c34eb;
       border: 1px solid #8c34eb;
       box-shadow: 0 0 10px #8c34eb, 0 0 20px #8c34eb, 0 0 30px #8c34eb; }
+  @media (max-width: 575.98px) {
+    #contact_me .contactForm .form-group .btnSubmit {
+      text-align: center; } }
 
 .listSocial {
   padding: 10px;
