@@ -14,10 +14,7 @@ $(document).ready(function () {
 
     $('.project-area .button-group #btn1').trigger("click");
 
-    $('.project-area .grid .test-popup-link').magnificPopup({
-        type: 'image',
-        gallery: { enabled: true }
-    });
+
 
     // owl-carousel
     $('.site-main .about-area .owl-carousel').owlCarousel({
@@ -34,6 +31,46 @@ $(document).ready(function () {
         }
 
     })
+    $(".modal-area .slick__carousel").slick({
+        infinite: true,
+        centerPadding: '5px',
+        variableWidth: true,
+        dots: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+    });
+    $(".modal-area .slick__project").slick({
+        infinite: true,
+        centerPadding: '5px',
+        variableWidth: true,
+        dots: false,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: true,
+        autoplaySpeed: 1000,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }
+
+        ]
+
+    });
 
     // sticky navigation menu
     let nav_offset_top = $('.header_area').height() + 50;
@@ -51,5 +88,8 @@ $(document).ready(function () {
         }
     }
     navbarFixed();
-
 })
+const handleScrollto = (content) => {
+    let elmnt = document.getElementById(content);
+    elmnt.scrollIntoView();
+}

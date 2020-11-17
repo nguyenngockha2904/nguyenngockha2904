@@ -1,27 +1,37 @@
-/* if the viewport is equal to 340px or less then that */
-@media only screen and (max-width: 340px) {
-  .header_area .main-menu .navbar,
-  .header_area .main-menu .navbar .navbar-brand,
-  .site-main .subscribe-us-area .subscribe .subscribe-title,
-  .site-main .subscribe-us-area .subscribe .subscribe-title p,
-  h4,
-  .site-main .services-area,
-  .site-main .subscribe-us-area .subscribe {
-    padding: 2%;
-    margin: 0%;
+@media only screen and (max-width: 992px) {
+  .site-main .skill-area .flex-reverse-row {
+    flex-wrap: wrap-reverse;
   }
-  .site-main .site-banner .site-title h1 {
-    font-size: 41px;
+  .site-main .about-me-area .about-left {
+    justify-content: center;
   }
-  .site-main .subscribe-us-area .subscribe form .input-textbox input {
-    width: 15rem;
+  .site-main .about-me-area {
+    margin: 0;
   }
-  .site-main > .services-area .services {
-    width: 13rem;
+  .site-main .site-banner .site-title h3 {
+    padding-top: 17%;
+  }
+  .modal-area .modal-content .slick__project .slick-prev {
+    left: -1%;
+  }
+  .modal-area .modal-content .slick__project .slick-next {
+    right: -1%;
+  }
+  .modal-area .modal-content .slick__project .slick-list {
+    width: calc(100% - 100px);
+  }
+  .modal-area .modal-content .slick__carousel .slick-dots {
+    transition: all 0.5s;
+    opacity: 1;
+    transform: translateY(-50px);
   }
 }
+
 /* if the viewport is equal to 792px or less then that */
 @media only screen and (max-width: 792px) {
+  .row {
+    margin: 0;
+  }
   .site-main .about-area .about-title h2 > span {
     font-size: 31px;
     letter-spacing: 10px;
@@ -43,23 +53,60 @@
   .site-main .project-area .about-title p {
     padding: 0%;
   }
-  .site-main .subscribe-us-area .subscribe form .input-textbox input {
-    width: 20rem;
-    margin: 5%;
-  }
-}
 
-/* if the viewport is equal to 1910px or less then that */
-@media only screen and (max-width: 1910px) {
-  .header_area .main-menu .navbar {
-    padding: 1rem;
+  .modal-area .modal-content .slick__carousel .slick-list {
+    height: calc(100% - 71px);
+    width: calc(100% - 0px);
   }
-  .container {
-    max-width: 90%;
-  }
-  .site-main .brand-area,
-  .site-main .services-area .services-title,
-  .site-main .about-area {
-    padding: 3% 4%;
+  .modal-area .modal-content {
+    padding: 1rem 3%;
   }
 }
+@media only screen and (max-width: 540px) {
+  .site-main .about-me-area .about-title h2 > span {
+    font: normal bold 17px/35px var(--roboto);
+    letter-spacing: 19px;
+  }
+  .modal-area .modal-content .slick__carousel .imgCarousel_content img {
+    height: calc(59vh - 82px);
+  }
+  .site-main .subscribe-us-area .subscribe {
+    padding: 1rem 0;
+    overflow: hidden;
+  }
+  .site-main .subscribe-us-area .subscribe .w-sm-resopsive {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+  }
+  .site-main .subscribe-us-area .subscribe form .input-textbox input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+/* if the viewport is equal to 425px or less then that */
+@media only screen and (max-width: 470.98px) {
+  .site-main .site-banner .site-title h4 {
+    font-size: 1.3rem;
+  }
+  .site-main .site-banner .site-buttons {
+    justify-content: center;
+  }
+  .site-main .project-area .button-group button + button {
+    padding-left: 1rem;
+  }
+  .site-main .about-me-area .about-title h2 > span {
+    font: normal bold 13px/35px var(--roboto);
+    letter-spacing: 15px;
+  }
+  .site-main .about-me-area .about-title .paragraph > p {
+    padding: 1rem 0;
+  }
+  .site-main .about-me-area .about-title h2 {
+    padding: 0;
+  }
+  .site-main .about-me-area .about-left .about-image > img {
+    height: 260px;
+  }
+}
+/* if the viewport is equal to 340px or less then that */

@@ -47,9 +47,13 @@
   color: whitesmoke;
   box-shadow: var(--box-shadow);
 }
+.paraTitle {
+  color: var(--gray-dark);
+  font: normal 500 16px/25px var(--roboto);
+}
 p.para {
   color: var(--text-color);
-  font: normal 500 16px/25px var(--roboto);
+  font: normal 400 16px/25px var(--roboto);
 }
 .font-roboto {
   font-family: var(--roboto);
@@ -76,4 +80,39 @@ button:hover,
   box-shadow: var(--box-shadow);
   z-index: 999;
   transition: background 1s ease;
+}
+.social h5 {
+  font: normal 500 23px/30px var(--roboto);
+}
+.social a > i {
+  font-size: 22px;
+  padding: 1.2rem;
+  color: var(--border-color);
+}
+.social a:hover > i {
+  color: var(--primary-color);
+}
+.progress {
+  height: 10px;
+  box-shadow: var(--box-shadow);
+}
+.progress .progress-bar {
+  background: var(--gradient-color);
+  box-shadow: var(--box-shadow);
+}
+.group-info {
+  margin-bottom: 2.5rem;
+}
+.group-info .paraTitle {
+  margin-bottom: 1rem;
+}
+.slick-initialized .slick-slide {
+  outline: 0px !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+.slick-track {
+  width: 100%;
 }

@@ -3,3 +3,7 @@
   font-family: "Roboto";
   src: "../fonts/Roboto/Roboto-Regular.ttf";
 }
+@font-face {
+  font-family: "Digital-7";
+  src: "../fonts/digital-7/digital-7.ttf";
+}

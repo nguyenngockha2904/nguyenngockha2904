@@ -15,7 +15,9 @@
     <!-- owl carousel css file -->
     <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
-
+    <!-- slick carousel css file -->
+    <link rel="stylesheet" href="./vendor/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./vendor/slick-1.8.1/slick/slick-theme.css">
     <!-- custom css file -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- responsive css file -->
@@ -23,11 +25,14 @@
 </head>
 
 <body>
+
     <!-- ========================= Start Header Area ========================= -->
+    <div id="body_ref"></div>
     <header class="header_area">
         <div class="main-menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div id="tieuDe"><a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo"></a></div>
+            <nav class="navbar navbar-expand-xl navbar-light">
+                <div id="tieuDe" onclick="handleScrollto('body_ref')"><a class="navbar-brand"><img src="./img/logo.svg"
+                            alt="logo"></a></div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,26 +40,29 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="mr-auto"></div>
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                        <li class="nav-item active" onclick="handleScrollto('body_ref')">
+                            <a class="nav-link">Home<span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">about</a>
+                        <li class="nav-item" onclick="handleScrollto('about_ref')">
+                            <a class="nav-link">about</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">services</a>
+                        <li class="nav-item" onclick="handleScrollto('skill_ref')">
+                            <a class="nav-link">Skills</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">portfolio</a>
+                        <li class="nav-item" onclick="handleScrollto('experience_ref')">
+                            <a class="nav-link">experience</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">pages</a>
+                        <li class="nav-item" onclick="handleScrollto('portfolio_ref')">
+                            <a class="nav-link">portfolio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">blog</a>
+                        <li class="nav-item" onclick="handleScrollto('references_ref')">
+                            <a class="nav-link">References</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">contact</a>
+                        <li class="nav-item" onclick="handleScrollto('body_ref')">
+                            <a class="nav-link">blog</a>
+                        </li>
+                        <li class="nav-item" onclick="handleScrollto('contact_ref')">
+                            <a class="nav-link">contact</a>
                         </li>
                     </ul>
                 </div>
@@ -70,7 +78,7 @@
         <section class="site-banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 site-title">
+                    <div class="col-lg-6 col-md-12 col-12 w-100 site-title">
                         <h3 class="title-text">Hey</h3>
                         <h1 class="title-text text-uppercase">I am Kha</h1>
                         <h4 class="title-text text-uppercase">Front-end Developer</h4>
@@ -82,8 +90,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 banner-image">
-                        <img src="./img/banner/banner-image.png" alt="banner-img" class="img-fluid">
+                    <div class="col-lg-6 col-md-12 col-12 w-100 banner-image">
+                        <img src="./img/banner/banner-image.svg" alt="banner-img" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -91,22 +99,34 @@
 
 
         <!-- end banner Area -->
-        <!--start About Area -->
-        <section class="about-area">
+        <!--start About me Area -->
+        <div id="about_ref" class="mb-5"></div>
+        <section class="about-me-area">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="about-image">
-                            <img src="./img/about-us.png" alt="AboutUs" class="img-fluid">
+                    <div class="about-left col-lg-4 col-md-12">
+                        <div>
+                            <div id="avatar" class="about-image">
+                                <img src="./img/avatar.jpg" alt="AboutUs" class="img-fluid">
+                            </div>
+                            <div class="mt-5 social text-center">
+                                <h5 class="text-uppercase">Follow me</h5>
+                                <div id="facebooklink"><a href="#"><i class="fab fa-facebook"></i></a></div>
+                                <div id="linkGitHub"><a href="#"><i class="fab fa-github"></i></a></div>
+                                <div><a href="#"><i class="fab fa-google"></i></a></div>
+                                <div><a href="#"><i class="fab fa-youtube"></i></a></div>
+
+
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 about-title">
+                    <div class="col-lg-8 col-md-12 about-title">
                         <h2 class="text-uppercase pt-5">
                             <span>Let Me</span>
                             <span>introduce</span>
                             <span>myself</span>
                         </h2>
-                        <div class="paragraph py-4 w-100">
+                        <div id="gioiThieu" class="paragraph py-4 w-100">
                             <p class="para">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam deserunt inventore
                                 assumenda laudantium hic esse cum, veniam minima aspernatur dolor?
@@ -123,172 +143,257 @@
                 </div>
             </div>
         </section>
-        <!--end About Area -->
+
+        <!--end About me Area -->
 
 
-        <!-- Brand Area -->
-        <section class="brand-area">
-            <div class="container-fuild">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-12 col-md-12">
-                        <div class="frist-row row">
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo1.png" alt="Brand-1">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo2.png" alt="Brand-2">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo3.png" alt="Brand-3">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo4.png" alt="Brand-4">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo5.png" alt="Brand-5">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo6.png" alt="Brand-6">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo7.png" alt="Brand-7">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo8.png" alt="Brand-8">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo9.png" alt="Brand-9">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-12 col-md-12">
-                        <div class="experience-area">
-                            <div class="d-flex flex-row years-area">
-                                <h2 class="p-3 years">10</h2>
-                                <h2>
-                                    <span>Years</span>
-                                    <span>Experience</span>
-                                    <span>Working</span>
-                                </h2>
-                            </div>
-                            <div class="d-flex flex-row flex-wrap call-area">
-                                <span><i class="fas fa-phone-alt fa-3x px-3"></i></span>
-                                <div class="call-now">
-                                    <a href="#" class="text-uppercase h4 font-roboto">Call now</a>
-                                    <span class="font-roboto py-2">(+84)-329-457-486</span>
-                                </div>
-                            </div>
-                            <div class="bg-panel"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end Brand Area -->
-
-        <!-- start Services Area -->
-        <section class="services-area">
+        <!-- Myinfo Area -->
+        <section class="info-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center services-title">
-                        <h1 class="text-uppercase title-text">Services Offers</h1>
+                    <div class="col-12 text-center info-title">
+                        <h1 class="text-uppercase title-text">Personal Infomation</h1>
                         <p class="para">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis perferendis voluptatibus
                             nisi!
                         </p>
                     </div>
-                </div>
-                <div class="container services-list">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="services">
-                                <div class="services-img text-center py-4">
-                                    <img src="./img/services/s1.png" alt="Service-1">
-                                </div>
-                                <div class="card-body text-center">
-                                    <h3 class="card-title text-uppercase">Wp developer</h3>
-                                    <p class="card-text text-secondary">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, laboriosam?
-                                        Repudiandae beatae debitis magni velit?
-                                    </p>
-                                </div>
+                    <div class="col-lg-6 col-12 info-personal">
+                        <div id="thongTinCaNhan">
+                            <div class="my-4">
+                                <dl class="group-info row">
+                                    <dt class="paraTitle col-sm-3 col-12">full name</dt>
+                                    <dd class="col-sm-9 col-12 hoTen para">Nguyễn Ngọc Kha</dd>
+                                </dl>
+                                <dl class="group-info row">
+                                    <dt class="paraTitle col-sm-3 col-12">D.O.B.</dt>
+                                    <dd class="col-sm-9 col-12 para">29 04 1999</dd>
+                                </dl>
+                                <dl class="group-info row">
+                                    <dt class="paraTitle col-sm-3 col-12">address</dt>
+                                    <dd class="col-sm-9 col-12 para">237A Liêu Bình Hương, Tân Thông Hội, Củ Chi, Tp.HCM
+                                    </dd>
+                                </dl>
+                                <dl class="group-info row">
+                                    <dt class="paraTitle col-sm-3 col-12">email</dt>
+                                    <dd class="col-sm-9 col-12 para"><a
+                                            href="mailto:khanguyen1000@gmail.com">khanguyen1000@gmail.com</a></dd>
+                                </dl>
+                                <dl class="group-info row">
+                                    <dt class="paraTitle col-sm-3 col-12">Phone</dt>
+                                    <dd class="col-sm-9 col-12 para">0329457486</dd>
+                                </dl>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="services">
-                                <div class="services-img text-center py-4">
-                                    <img src="./img/services/s2.png" alt="Service-2">
-                                </div>
-                                <div class="card-body text-center">
-                                    <h3 class="card-title text-uppercase">ux/ui design</h3>
-                                    <p class="card-text text-secondary">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, laboriosam?
-                                        Repudiandae beatae debitis magni velit?
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="services">
-                                <div class="services-img text-center py-4">
-                                    <img src="./img/services/s3.png" alt="Service-3">
-                                </div>
-                                <div class="card-body text-center">
-                                    <h3 class="card-title text-uppercase">web design</h3>
-                                    <p class="card-text text-secondary">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, laboriosam?
-                                        Repudiandae beatae debitis magni velit?
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="services">
-                                <div class="services-img text-center py-4">
-                                    <img src="./img/services/s4.png" alt="Service-4">
-                                </div>
-                                <div class="card-body text-center">
-                                    <h3 class="card-title text-uppercase">Seo</h3>
-                                    <p class="card-text text-secondary">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, laboriosam?
-                                        Repudiandae beatae debitis magni velit?
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="col-lg-6 col-12 info-skills">
+                        <div>
+                            <div class="my-4">
+                                <dl class="group-info">
+                                    <dt class="paraTitle">English</dt>
+                                    <dd>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="group-info">
+                                    <dt class="paraTitle">Japanese</dt>
+                                    <dd>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="group-info">
+                                    <dt class="paraTitle">vietnamese</dt>
+                                    <dd>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 100%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </dd>
+                                </dl>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- end myInfo Area -->
 
-        <!-- End Services Area -->
+        <!-- start Skills area -->
+        <div class="pb-5" id="skill_ref"></div>
+        <section class="skill-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center skill-title">
+                        <h1 class="text-uppercase title-text">My skills</h1>
+                        <p class="para">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis perferendis voluptatibus
+                            nisi!
+                        </p>
+                    </div>
+                    <div class="flex-reverse-row w-100 row">
+                        <div class="col-lg-6 col-12 mb-5 skill-info ">
+                            <div id="ngonNgu">
+                                <dl class="group-info">
+                                    <dt class="paraTitle">HTML & CSS & Bootstrap</dt>
+                                    <dd>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 70%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="group-info">
+                                    <dt class="paraTitle">JavaScript</dt>
+                                    <dd>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 55%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="group-info">
+                                    <dt class="paraTitle">SASS-SCSS</dt>
+                                    <dd>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 40%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="group-info">
+                                    <dt class="paraTitle">ReactJS</dt>
+                                    <dd>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 70%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="group-info">
+                                    <dt class="paraTitle">React Native</dt>
+                                    <dd>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 15%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="group-info">
+                                    <dt class="paraTitle">AngularJS</dt>
+                                    <dd>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 15%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="group-info">
+                                    <dt class="paraTitle">MINDSET & ANALYSIS</dt>
+                                    <dd>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 35%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12 mb-5 skill-banner">
+                            <img src="./img/banner/banner-Skill.svg" alt="banner-Skill" class="img-fluid w-100">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- end skill area -->
+
+
+
+        <!--start work Experiences Area -->
+        <div id="experience_ref" class="mb-5"></div>
+        <section class="work-experience-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center work-experience-title">
+                        <h1 class="text-uppercase title-text">Work Experiences</h1>
+                        <p class="para">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis perferendis voluptatibus
+                            nisi!
+                        </p>
+                    </div>
+                    <div class="flex-reverse-row w-100 row">
+                        <div class="col-12 work-experience-content">
+                            <div id="kinhNghiem">
+                                <div id="state-end-date" class="work-experience-box">
+                                    <div class="work-experience-groupTime">
+                                        <time class="experience-date" datetime="2014-01T2016-03">
+                                            <span>Jan <strong class="text-upper">2014</strong> - Mar
+                                                <strong>2016</strong></span>
+                                        </time>
+
+                                        <div id="jobTitle" class="paraTitle work-experience-job-title">Front End
+                                            Developer</div>
+                                    </div>
+                                    <div id="tenCongTy" class="paraTitle row align-items-center">
+                                        <div class="m-4 ml-0 col-2 d-inline-block">
+                                            <img src="./img/brands/logo1.png" alt="logoCompany">
+                                        </div>
+                                        <div class="my-4 para col-sm-6 col-12">Travel ABC</div>
+                                    </div>
+                                    <div id="moTa" class="para">Your brand is the core of your marketing,
+                                        the central theme around your products and services.
+                                        Your brand is not your Logo or your Company Name.
+                                    </div>
+                                </div>
+                                <div class="work-experience-box">
+                                    <div class="work-experience-groupTime">
+                                        <time class="experience-date" datetime="2014-01T2016-03">
+                                            <span>Jan <strong class="text-upper">2014</strong> - Mar
+                                                <strong>2016</strong></span>
+                                        </time>
+
+                                        <div class="paraTitle work-experience-job-title">Front End
+                                            Developer</div>
+                                    </div>
+                                    <div class="paraTitle row align-items-center">
+                                        <div class="m-4 ml-0 col-2 d-inline-block">
+                                            <img src="./img/brands/logo2.png" alt="logo2">
+                                        </div>
+                                        <div class="my-4 para col-sm-6 col-12">ORGANIC Group</div>
+                                    </div>
+                                    <div class="para">Your brand is the core of your marketing,
+                                        the central theme around your products and services.
+                                        Your brand is not your Logo or your Company Name.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end work Experiences Area -->
+
+
+
         <!-- Project Area -->
-
+        <div id="portfolio_ref" class="mb-5"></div>
         <section class="project-area">
             <div class="container">
-                <div class="project-title pb-5">
-                    <h1 class="text-uppercase title-h1">Recently done project</h1>
-                    <h1 class="text-uppercase title-h1">Quanlity work</h1>
+                <div class="project-title pb-3">
+                    <h1 class="text-uppercase title-h1">Profolio</h1>
                 </div>
-                <div class="button-group">
+                <div class="button-group mb-5">
                     <button type="button" class="active" id="btn1" data-filter="*">All</button>
                     <button type="button" data-filter=".popular">Popular</button>
                     <button type="button" data-filter=".latest">Lastest</button>
@@ -296,25 +401,21 @@
                     <button type="button" data-filter=".upcoming">Upcomming</button>
                 </div>
                 <div class="row grid">
-                    <div class="col-lg-4 col-md-6 col sm-12 element-item latest">
+                    <div id="portfolio" class="col-lg-4 col-md-6 col-sm-12 element-item latest">
                         <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./img/portfolio/p1.jpg">
-                                    <img src="./img/portfolio/p1.jpg" alt="portfolio-1">
-                                </a>
+                            <div id="hinhAnh" class="img" data-toggle="modal" data-target="#modal-view-more">
+                                <img src="./img/portfolio/p1.jpg" alt="portfolio-1">
                             </div>
-                            <div class="title py-4">
+                            <div id="tenDuAn" class="title py-4">
                                 <h4 class="text-uppercase">Minimul desing</h4>
                                 <span class="text-secondary">Latest, Portfolio</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col sm-12 element-item popular">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
                         <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./img/portfolio/p2.jpg">
-                                    <img src="./img/portfolio/p2.jpg" alt="portfolio-2">
-                                </a>
+                            <div class="img" data-toggle="modal" data-target="#modal-view-more">
+                                <img src="./img/portfolio/p2.jpg" alt="portfolio-2">
                             </div>
                             <div class="title py-4">
                                 <h4 class="text-uppercase">Paint wall</h4>
@@ -322,13 +423,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col sm-12 element-item popular">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
                         <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./img/portfolio/p3.jpg">
-                                    <img src="./img/portfolio/p3.jpg" alt="portfolio-3">
-                                </a>
-
+                            <div class="img" data-toggle="modal" data-target="#modal-view-more">
+                                <img src="./img/portfolio/p3.jpg" alt="portfolio-3">
                             </div>
                             <div class="title py-4">
                                 <h4 class="text-uppercase">female light</h4>
@@ -336,12 +434,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col sm-12 element-item upcoming">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
                         <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./img/portfolio/p4.jpg">
-                                    <img src="./img/portfolio/p4.jpg" alt="portfolio-4">
-                                </a>
+                            <div class="img" data-toggle="modal" data-target="#modal-view-more">
+                                <img src="./img/portfolio/p4.jpg" alt="portfolio-4">
                             </div>
                             <div class="title py-4">
                                 <h4 class="text-uppercase">Fourth Air</h4>
@@ -349,12 +445,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col sm-12 element-item upcoming">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
                         <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./img/portfolio/p5.jpg">
-                                    <img src="./img/portfolio/p5.jpg" alt="portfolio-5">
-                                </a>
+                            <div class="img" data-toggle="modal" data-target="#modal-view-more">
+                                <img src="./img/portfolio/p5.jpg" alt="portfolio-5">
 
                             </div>
                             <div class="title py-4">
@@ -363,12 +457,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col sm-12 element-item following">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
                         <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./img/portfolio/p6.jpg">
-                                    <img src="./img/portfolio/p6.jpg" alt="portfolio-6">
-                                </a>
+                            <div class="img" data-toggle="modal" data-target="#modal-view-more">
+                                <img src="./img/portfolio/p6.jpg" alt="portfolio-6">
                             </div>
                             <div class="title py-4">
                                 <h4 class="text-uppercase">Together sign</h4>
@@ -376,13 +468,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col sm-12 element-item following">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
                         <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./img/portfolio/p7.jpg">
-                                    <img src="./img/portfolio/p7.jpg" alt="portfolio-7">
-                                </a>
-
+                            <div class="img" data-toggle="modal" data-target="#modal-view-more">
+                                <img src="./img/portfolio/p7.jpg" alt="portfolio-7">
                             </div>
                             <div class="title py-4">
                                 <h4 class="text-uppercase">Green Heaven</h4>
@@ -390,13 +479,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col sm-12 element-item following">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
                         <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./img/portfolio/p8.jpg">
-                                    <img src="./img/portfolio/p8.jpg" alt="portfolio-8">
-                                </a>
-
+                            <div class="img" data-toggle="modal" data-target="#modal-view-more">
+                                <img src="./img/portfolio/p8.jpg" alt="portfolio-8">
                             </div>
                             <div class="title py-4">
                                 <h4 class="text-uppercase">Fly male</h4>
@@ -404,13 +490,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col sm-12 element-item upcoming">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
                         <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./img/portfolio/p9.jpg">
-                                    <img src="./img/portfolio/p9.jpg" alt="portfolio-9">
-                                </a>
-
+                            <div class="img" data-toggle="modal" data-target="#modal-view-more">
+                                <img src="./img/portfolio/p9.jpg" alt="portfolio-9">
                             </div>
                             <div class="title py-4">
                                 <h4 class="text-uppercase">Camera Lens</h4>
@@ -425,13 +508,13 @@
         <!-- end Project Area -->
 
         <!--  About Me area -->
-
+        <div id="references_ref" class="pb-5"></div>
         <section class="about-area">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-12">
                         <div class="about-title">
-                            <h1 class="text-uppercase title-h1">Client Say about me</h1>
+                            <h1 class="text-uppercase title-h1">References</h1>
                             <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
                                 consequuntur tempora? Iure a ad cumque magni perferendis laborum repellat praesentium?
                             </p>
@@ -441,38 +524,44 @@
             </div>
 
             <div class="container carousel py-lg-5">
-                <div class="owl-carousel owl-theme">
-                    <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                <div id="desc_cv">
+                    <div class="owl-carousel owl-theme">
+                        <div class="client row">
+                            <div class="col-lg-4 col-md-12 client-img">
+                                <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                            </div>
+                            <div class="col-lg-8 col-md-12 about-client">
+                                <h4 class="text-uppercase">John martin</h4>
+                                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ea.
+                                    Molestiae modi placeat dignissimos perferendis maiores atque! Quaerat, impedit hic.
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">John martin</h4>
-                            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ea.
-                                Molestiae modi placeat dignissimos perferendis maiores atque! Quaerat, impedit hic.</p>
+                        <div class="client row">
+                            <div class="col-lg-4 col-md-12 client-img">
+                                <img src="./img/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                            </div>
+                            <div class="col-lg-8 col-md-12 about-client">
+                                <h4 class="text-uppercase">Macc hill</h4>
+                                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ea.
+                                    Molestiae modi placeat dignissimos perferendis maiores atque! Quaerat, impedit hic.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="./img/testimonials/t2.jpg" alt="img2" class="img-fluid">
-                        </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">Macc hill</h4>
-                            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ea.
-                                Molestiae modi placeat dignissimos perferendis maiores atque! Quaerat, impedit hic.</p>
-                        </div>
-                    </div>
-                    <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
-                        </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">John martin</h4>
-                            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ea.
-                                Molestiae modi placeat dignissimos perferendis maiores atque! Quaerat, impedit hic.</p>
+                        <div class="client row">
+                            <div class="col-lg-4 col-md-12 client-img">
+                                <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                            </div>
+                            <div class="col-lg-8 col-md-12 about-client">
+                                <h4 class="text-uppercase">John martin</h4>
+                                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ea.
+                                    Molestiae modi placeat dignissimos perferendis maiores atque! Quaerat, impedit hic.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -480,6 +569,8 @@
 
 
         <!-- subscribe me area  -->
+        <div id="contact_ref" class="pb-5"></div>
+        <div class="pb-5"></div>
         <section class="subscribe-us-area">
             <div class="container subscribe">
                 <div class="row">
@@ -490,12 +581,12 @@
                     </div>
                 </div>
                 <div class="d-sm-flex justify-content-center">
-                    <form class="w-50">
-                        <div class="row d-flex flex-row flex-wrap">
-                            <div class="col input-textbox">
+                    <form class="w-sm-resopsive">
+                        <div class="row">
+                            <div class=" input-textbox">
                                 <input type="text" id="txtEmail" class="form-control" placeholder="Email">
                             </div>
-                            <div class="col">
+                            <div class="">
                                 <div class="btn-submit">
                                     <button type="submit" class="btn btn-success float-right">Subscribe</button>
                                 </div>
@@ -508,9 +599,153 @@
         </section>
         <!-- End subscribe me area  -->
     </div>
-
-
     <!-- ========================= End main Area ========================= -->
+
+    <!-- ========================= Start Modal View more Area ================= -->
+    <section class="modal-area modal fade" id="modal-view-more">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div>
+                    <button type="button" class="close mb-3" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="row align-items-center" style="height: inherit;">
+                    <div id="project" class="col-xl-7 col-12">
+                        <div class="slick__carousel">
+                            <div class="imgCarousel_content">
+                                <div>
+                                    <img src="./img/portfolio/p1.jpg" alt="prj-01.jpg" class="img-fluid" />
+                                </div>
+
+
+                            </div>
+                            <div class="imgCarousel_content">
+                                <div>
+                                    <img src="./img/portfolio/p2.jpg" alt="prj-01.jpg" class="img-fluid" />
+                                </div>
+                            </div>
+                            <div class="imgCarousel_content">
+                                <div>
+                                    <img src="./img/portfolio/p1.jpg" alt="prj-01.jpg" class="img-fluid" />
+                                </div>
+                            </div>
+                            <div class="imgCarousel_content">
+                                <div>
+                                    <img src="./img/portfolio/p1.jpg" alt="prj-01.jpg" class="img-fluid" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-12">
+                        <div id="projectName" class="h5 title">
+                            FOURTH AIR
+                        </div>
+                        <div id="skill" class="textMult">
+                            design / development
+                        </div>
+                        <div id="desc_time">
+                            <dl>
+                                <div class="dl-horizontal">
+                                    <dt>Date:</dt>
+                                    <dd>11 Jan 2020</dd>
+                                </div>
+                                <div class="dl-horizontal">
+                                    <dt>Site link:</dt>
+                                    <dd><a href="www.sitedomen.com">www.sitedomen.com</a></dd>
+                                </div>
+
+                                <div class="dl-horizontal">
+                                    <dt>Client:</dt>
+                                    <dd>11 Jan 2012</dd>
+                                </div>
+
+                            </dl>
+                        </div>
+                        <div id="desc_content" class="my-3">
+                            <div class="para">About 64% of all on-line teens say that do things online that they
+                                wouldn’t want
+                                their
+                                parents to know about. 11% of all adult internet users visit dating websites and
+                                spend their
+                                time in chatrooms.</div>
+                        </div>
+                        <div id="img_project_ref">
+                            <div class="slick__project row">
+                                <div class="imgCarousel_content">
+                                    <img src="./img/portfolio/p2.jpg" alt="prj-02">
+                                    <div class="project_caption">
+                                        <button class="btn button btn-view" data-toggle="modal"
+                                            data-target="#ModalViewMore">View</button>
+                                    </div>
+                                </div>
+                                <div class="imgCarousel_content">
+                                    <img src="./img/portfolio/p3.jpg" alt="prj-03">
+                                    <div class="project_caption">
+                                        <button class="btn button btn-view" data-toggle="modal"
+                                            data-target="#ModalViewMore">View</button>
+                                    </div>
+                                </div>
+                                <div class="imgCarousel_content">
+                                    <img src="./img/portfolio/p4.jpg" alt="prj-04">
+                                    <div class="project_caption">
+                                        <button class="btn button   btn-view" data-toggle="modal"
+                                            data-target="#ModalViewMore">View</button>
+                                    </div>
+                                </div>
+                                <div class="imgCarousel_content">
+                                    <img src="./img/portfolio/p5.jpg" alt="prj-05">
+                                    <div class="project_caption">
+                                        <button class="btn button   btn-view" data-toggle="modal"
+                                            data-target="#ModalViewMore">View</button>
+                                    </div>
+                                </div>
+                                <div class="imgCarousel_content">
+                                    <img src="./img/portfolio/p6.jpg" alt="prj-06">
+                                    <div class="project_caption">
+                                        <button class="btn button   btn-view" data-toggle="modal"
+                                            data-target="#ModalViewMore">View</button>
+                                    </div>
+                                </div>
+                                <div class="imgCarousel_content">
+                                    <img src="./img/portfolio/p7.jpg" alt="prj-07">
+                                    <div class="project_caption">
+                                        <button class="btn button   btn-view" data-toggle="modal"
+                                            data-target="#ModalViewMore">View</button>
+                                    </div>
+                                </div>
+                                <div class="imgCarousel_content">
+                                    <img src="./img/portfolio/p8.jpg" alt="prj-08">
+                                    <div class="project_caption">
+                                        <button class="btn button   btn-view" data-toggle="modal"
+                                            data-target="#ModalViewMore">View</button>
+                                    </div>
+                                </div>
+                                <div class="imgCarousel_content">
+                                    <img src="./img/portfolio/p9.jpg" alt="prj-09">
+                                    <div class="project_caption">
+                                        <button class="btn button   btn-view" data-toggle="modal"
+                                            data-target="#ModalViewMore">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ========================= End Modal View more Area ================= -->
+    <!--========================= Button scrolltoTop =================  -->
+    <section class="scrollto-area">
+        <div>
+            <button class="btn button ">
+
+            </button>
+        </div>
+
+    </section>
     <!-- ========================= Footer Area ========================= -->
     <footer class="footer-area">
         <div class="container">
@@ -521,16 +756,11 @@
                 <div class="social text-center">
                     <h5 class="text-uppercase">Follow me</h5>
                     <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
-                <div class="copyrights text-center">
-                    <p class="para">
-                        Copyright ©2020 All rights reserved | This template is made with by
-                        <a href="#"><span style="color:var(--primary-color)">Daily Tuition</span></a>
-                    </p>
-                </div>
+
 
             </div>
         </div>
@@ -551,6 +781,10 @@
 
     <!-- owl-carousel js file -->
     <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <!-- slick carousel js file -->
+    <script src="./vendor/slick-1.8.1/slick/slick.min.js"></script>
+
     <!-- custom js file -->
     <script src="./js/main.js"></script>
 </body>

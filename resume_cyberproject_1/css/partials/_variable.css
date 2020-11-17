@@ -1,23 +1,27 @@
 html,
 body {
+  scroll-behavior: smooth;
   margin: 0%;
   box-sizing: border-box;
   width: 100%;
   height: 100%;
   font-size: 16px;
+  line-height: 1.4em;
+  letter-spacing: 0.08em;
 }
 
 /* css variables */
 
 :root {
-  --primary-color: #4458ec;
-  --primary-color2: #854fee;
+  --primary-color: #812cd2;
+  --primary-color2: #6b20a1;
   --title-color: #141313;
   --text-color: #777777;
   --border-color: #201f1f17;
-  --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  --gradient-color: linear-gradient(90deg, #812cd2 0%, #6b20a1 100%);
   --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
   --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
   /* font family variables */
   --roboto: "Roboto", cursive;
+  --digital: "Digital-7", cursive;
 }
